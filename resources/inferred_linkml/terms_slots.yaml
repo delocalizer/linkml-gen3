@@ -9,10 +9,7 @@ default_prefix: example
 slots:
   28s_16s_ribosomal_rna_ratio:
     description: 'The 28S/18S ribosomal RNA band ratio used to assess the quality
-      of total RNA.
-
-      '
-    name: 28s/18s Ribosomal RNA Ratio
+      of total RNA.'
     annotations:
     - tag: source
       value: null
@@ -22,12 +19,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: 28s/18s Ribosomal RNA Ratio
   a260_a280_ratio:
     description: 'Numeric value that represents the sample ratio of nucleic acid absorbance
-      at 260 nm and 280 nm, used to determine a measure of DNA purity.
-
-      '
-    name: Nucleic Acid Absorbance at 260 And Absorbance at 280 DNA Purity Ratio Value
+      at 260 nm and 280 nm, used to determine a measure of DNA purity.'
     annotations:
     - tag: source
       value: caDSR
@@ -37,11 +33,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432595&version=1.0
+    - tag: term
+      value: Nucleic Acid Absorbance at 260 And Absorbance at 280 DNA Purity Ratio
+        Value
   age:
-    description: 'Age at last visit. Age is encoded as ISO8601 duration. (CMG)
-
-      '
-    name: Age at last visit. Age is encoded as ISO8601 duration.
+    description: 'Age at last visit. Age is encoded as ISO8601 duration. (CMG)'
     annotations:
     - tag: source
       value: Phenopackets
@@ -51,12 +47,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://phenopackets-schema.readthedocs.io/en/latest/age.html#rstage
+    - tag: term
+      value: Age at last visit. Age is encoded as ISO8601 duration.
   family_onset:
     description: 'Typical age of onset for the family. Age is encoded as ISO8601 duration.
-      (CMG)
-
-      '
-    name: Typical age of onset for the family. Age is encoded as ISO8601 duration.
+      (CMG)'
     annotations:
     - tag: source
       value: Phenopackets
@@ -66,11 +61,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://phenopackets-schema.readthedocs.io/en/latest/age.html#rstage
+    - tag: term
+      value: Typical age of onset for the family. Age is encoded as ISO8601 duration.
   disease_omim_id:
-    description: 'The ID of the term from OMIM which represents a disease. (CMG)
-
-      '
-    name: The ID of the term from OMIM which represents a disease. (CMG)
+    description: 'The ID of the term from OMIM which represents a disease. (CMG)'
     annotations:
     - tag: source
       value: OMIM
@@ -80,13 +74,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://www.ncbi.nlm.nih.gov/omim
+    - tag: term
+      value: The ID of the term from OMIM which represents a disease. (CMG)
   phenotype_hpo_id:
     description: 'The ID of the term from Human Phenotype Ontology which represents
-      a harmonized phenotype. (CMG)
-
-      '
-    name: The ID of the term from Human Phenotype Ontology which represents a harmonized
-      phenotype. (CMG)
+      a harmonized phenotype. (CMG)'
     annotations:
     - tag: source
       value: HPO
@@ -96,21 +88,16 @@ slots:
       value: '1'
     - tag: term_url
       value: https://hpo.jax.org/app/
+    - tag: term
+      value: The ID of the term from Human Phenotype Ontology which represents a harmonized
+        phenotype. (CMG)
   adapter_name:
-    description: 'Name of the sequencing adapter.
-
-      '
+    description: 'Name of the sequencing adapter.'
   adapter_sequence:
-    description: 'Base sequence of the sequencing adapter.
-
-      '
+    description: 'Base sequence of the sequencing adapter.'
   age_of_onset:
     description: 'Age of onset (if affected). Otherwise age of last exam or phenotype
-      transfer. (CMG)
-
-      '
-    name: Age of onset (if affected). Otherwise age of last exam or phenotype transfer.
-      (CMG)
+      transfer. (CMG)'
     annotations:
     - tag: source
       value: Phenopackets
@@ -120,17 +107,15 @@ slots:
       value: '1'
     - tag: term_url
       value: https://phenopackets-schema.readthedocs.io/en/latest/age.html#rstage
+    - tag: term
+      value: Age of onset (if affected). Otherwise age of last exam or phenotype transfer.
+        (CMG)
   age_at_event_days_gt89:
     description: 'Indicate whether the ''Age at the time an event occurs expressed
-      in the number of days since birth'' is greater than 32872 days (89 years).
-
-      '
+      in the number of days since birth'' is greater than 32872 days (89 years).'
   age_at_diagnosis:
     description: 'Age at the time of diagnosis expressed in number of days since birth.
-      If the age at diagnosis is greater than 32872 days (89 years), then see ''age_at_diagnosis_gt89''.
-
-      '
-    name: Patient Diagnosis Age Day Value
+      If the age at diagnosis is greater than 32872 days (89 years), then see ''age_at_diagnosis_gt89''.'
     annotations:
     - tag: source
       value: caDSR
@@ -140,12 +125,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3225640&version=2.0
+    - tag: term
+      value: Patient Diagnosis Age Day Value
   age_at_diagnosis_gt89:
     description: 'Indicate whether the age at the time of diagnosis expressed in number
-      of days since birth is greater than 32872 days (89 years).
-
-      '
-    name: Patient Diagnosis Age Day Value
+      of days since birth is greater than 32872 days (89 years).'
     annotations:
     - tag: source
       value: caDSR
@@ -155,13 +139,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3225640&version=2.0
+    - tag: term
+      value: Patient Diagnosis Age Day Value
   ajcc_clinical_m:
     description: 'Extent of the distant metastasis for the cancer based on evidence
-      obtained from clinical assessment parameters determined prior to treatment.
-
-      '
-    name: Neoplasm American Joint Committee on Cancer Clinical Distant Metastasis
-      M Stage
+      obtained from clinical assessment parameters determined prior to treatment.'
     annotations:
     - tag: source
       value: caDSR
@@ -171,14 +153,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3440331&version=1.0
+    - tag: term
+      value: Neoplasm American Joint Committee on Cancer Clinical Distant Metastasis
+        M Stage
   ajcc_clinical_n:
     description: 'Extent of the regional lymph node involvement for the cancer based
       on evidence obtained from clinical assessment parameters determined prior to
-      treatment.
-
-      '
-    name: Neoplasm American Joint Committee on Cancer Clinical Regional Lymph Node
-      N Stage
+      treatment.'
     annotations:
     - tag: source
       value: caDSR
@@ -188,13 +169,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3440330&version=1.0
+    - tag: term
+      value: Neoplasm American Joint Committee on Cancer Clinical Regional Lymph Node
+        N Stage
   ajcc_clinical_stage:
     description: 'Stage group determined from clinical information on the tumor (T),
       regional node (N) and metastases (M) and by grouping cases with similar prognosis
-      for cancer.
-
-      '
-    name: Neoplasm American Joint Committee on Cancer Clinical Group Stage
+      for cancer.'
     annotations:
     - tag: source
       value: caDSR
@@ -204,12 +185,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3440332&version=1.0
+    - tag: term
+      value: Neoplasm American Joint Committee on Cancer Clinical Group Stage
   ajcc_clinical_t:
     description: 'Extent of the primary cancer based on evidence obtained from clinical
-      assessment parameters determined prior to treatment.
-
-      '
-    name: Neoplasm American Joint Committee on Cancer Clinical Primary Tumor T Stage
+      assessment parameters determined prior to treatment.'
     annotations:
     - tag: source
       value: caDSR
@@ -219,14 +199,14 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3440328&version=1.0
+    - tag: term
+      value: Neoplasm American Joint Committee on Cancer Clinical Primary Tumor T
+        Stage
   ajcc_pathologic_m:
     description: 'Code to represent the defined absence or presence of distant spread
       or metastases (M) to locations via vascular channels or lymphatics beyond the
       regional lymph nodes, using criteria established by the American Joint Committee
-      on Cancer (AJCC).
-
-      '
-    name: American Joint Committee on Cancer Metastasis Stage Code
+      on Cancer (AJCC).'
     annotations:
     - tag: source
       value: caDSR
@@ -236,13 +216,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3045439&version=1.0
+    - tag: term
+      value: American Joint Committee on Cancer Metastasis Stage Code
   ajcc_pathologic_n:
     description: 'The codes that represent the stage of cancer based on the nodes
       present (N stage) according to criteria based on multiple editions of the AJCC''s
-      Cancer Staging Manual.
-
-      '
-    name: Neoplasm Disease Lymph Node Stage American Joint Committee on Cancer Code
+      Cancer Staging Manual.'
     annotations:
     - tag: source
       value: caDSR
@@ -252,12 +231,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3203106&version=1.0
+    - tag: term
+      value: Neoplasm Disease Lymph Node Stage American Joint Committee on Cancer
+        Code
   ajcc_pathologic_stage:
     description: 'The extent of a cancer, especially whether the disease has spread
-      from the original site to other parts of the body based on AJCC staging criteria.
-
-      '
-    name: Neoplasm Disease Stage American Joint Committee on Cancer Code
+      from the original site to other parts of the body based on AJCC staging criteria.'
     annotations:
     - tag: source
       value: caDSR
@@ -267,13 +246,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3203222&version=1.0
+    - tag: term
+      value: Neoplasm Disease Stage American Joint Committee on Cancer Code
   ajcc_pathologic_t:
     description: 'Code of pathological T (primary tumor) to define the size or contiguous
       extension of the primary tumor (T), using staging criteria from the American
-      Joint Committee on Cancer (AJCC).
-
-      '
-    name: American Joint Committee on Cancer Tumor Stage Code
+      Joint Committee on Cancer (AJCC).'
     annotations:
     - tag: source
       value: caDSR
@@ -283,12 +261,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3045435&version=1.0
+    - tag: term
+      value: American Joint Committee on Cancer Tumor Stage Code
   alcohol_history:
     description: 'A response to a question that asks whether the participant has consumed
-      at least 12 drinks of any kind of alcoholic beverage in their lifetime.
-
-      '
-    name: Alcohol Lifetime History Indicator
+      at least 12 drinks of any kind of alcoholic beverage in their lifetime.'
     annotations:
     - tag: source
       value: caDSR
@@ -298,16 +275,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2201918&version=1.0
+    - tag: term
+      value: Alcohol Lifetime History Indicator
   drink_number:
-    description: 'Units of drink consumed during Drink Period (DRNKPRD). (GTEx)
-
-      '
+    description: 'Units of drink consumed during Drink Period (DRNKPRD). (GTEx)'
   aliquot_quantity:
     description: 'The quantity in micrograms (ug) of the aliquot(s) derived from the
-      analyte(s) shipped for sequencing and characterization.
-
-      '
-    name: Biospecimen Aliquot Quantity
+      analyte(s) shipped for sequencing and characterization.'
     annotations:
     - tag: source
       value: null
@@ -317,12 +291,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Biospecimen Aliquot Quantity
   aliquot_volume:
     description: 'The volume in microliters (ml) of the aliquot(s) derived from the
-      analyte(s) shipped for sequencing and characterization.
-
-      '
-    name: Biospecimen Aliquot Volume
+      analyte(s) shipped for sequencing and characterization.'
     annotations:
     - tag: source
       value: null
@@ -332,16 +305,13 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Biospecimen Aliquot Volume
   amount:
-    description: 'Weight in grams or volume in mL.
-
-      '
+    description: 'Weight in grams or volume in mL.'
   analyte_quantity:
     description: 'The quantity in micrograms (ug) of the analyte(s) derived from the
-      analyte(s) shipped for sequencing and characterization.
-
-      '
-    name: Biospecimen Analyte Quantity
+      analyte(s) shipped for sequencing and characterization.'
     annotations:
     - tag: source
       value: null
@@ -351,11 +321,10 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Biospecimen Analyte Quantity
   analyte_type:
-    description: 'Text term that represents the kind of molecular specimen analyte.
-
-      '
-    name: Molecular Specimen Type Text Name
+    description: 'Text term that represents the kind of molecular specimen analyte.'
     annotations:
     - tag: source
       value: caDSR
@@ -365,11 +334,10 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2513915&version=2.0
+    - tag: term
+      value: Molecular Specimen Type Text Name
   analyte_type_id:
-    description: 'A single letter code used to identify a type of molecular analyte.
-
-      '
-    name: Molecular Analyte Identification Code
+    description: 'A single letter code used to identify a type of molecular analyte.'
     annotations:
     - tag: source
       value: caDSR
@@ -379,12 +347,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432508&version=1.0
+    - tag: term
+      value: Molecular Analyte Identification Code
   analyte_volume:
     description: 'The volume in microliters (ml) of the analyte(s) derived from the
-      analyte(s) shipped for sequencing and characterization.
-
-      '
-    name: Biospecimen Analyte Volume
+      analyte(s) shipped for sequencing and characterization.'
     annotations:
     - tag: source
       value: null
@@ -394,12 +361,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Biospecimen Analyte Volume
   ann_arbor_b_symptoms:
     description: 'Text term to signify whether lymphoma B-symptoms are present as
-      noted in the patient''s medical record.
-
-      '
-    name: Lymphoma B-Symptoms Medical Record Documented Indicator
+      noted in the patient''s medical record.'
     annotations:
     - tag: source
       value: caDSR
@@ -409,13 +375,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2902402&version=1.0
+    - tag: term
+      value: Lymphoma B-Symptoms Medical Record Documented Indicator
   ann_arbor_clinical_stage:
     description: 'The classification of the clinically confirmed anatomic disease
       extent of lymphoma (Hodgkin''s and Non-Hodgkins) based on the Ann Arbor Staging
-      System.
-
-      '
-    name: Ann Arbor Clinical Stage
+      System.'
     annotations:
     - tag: source
       value: null
@@ -425,12 +390,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Ann Arbor Clinical Stage
   ann_arbor_extranodal_involvement:
     description: 'Indicator that identifies whether a patient with malignant lymphoma
-      has lymphomatous involvement of an extranodal site.
-
-      '
-    name: Lymphomatous Extranodal Site Involvement Indicator
+      has lymphomatous involvement of an extranodal site.'
     annotations:
     - tag: source
       value: caDSR
@@ -440,13 +404,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3364582&version=1.0
+    - tag: term
+      value: Lymphomatous Extranodal Site Involvement Indicator
   ann_arbor_pathologic_stage:
     description: 'The classification of the pathologically confirmed anatomic disease
       extent of lymphoma (Hodgkin''s and Non-Hodgkins) based on the Ann Arbor Staging
-      System.
-
-      '
-    name: Ann Arbor Pathologic Stage
+      System.'
     annotations:
     - tag: source
       value: null
@@ -456,12 +419,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Ann Arbor Pathologic Stage
   ann_arbor_tumor_stage:
     description: 'The classification of the anatomic disease extent of lymphoma (Hodgkin''s
-      and Non-Hodgkins) based on the Ann Arbor Staging System.
-
-      '
-    name: Ann Arbor Tumor Stage
+      and Non-Hodgkins) based on the Ann Arbor Staging System.'
     annotations:
     - tag: source
       value: null
@@ -471,20 +433,15 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Ann Arbor Tumor Stage
   base_caller_name:
-    description: 'Name of the base caller.
-
-      '
+    description: 'Name of the base caller.'
   base_caller_version:
-    description: 'Version of the base caller.
-
-      '
+    description: 'Version of the base caller.'
   biomarker_name:
     description: 'The name of the biomarker being tested for this specimen and set
-      of test results.
-
-      '
-    name: Biomarker Name
+      of test results.'
     annotations:
     - tag: source
       value: caDSR
@@ -494,11 +451,10 @@ slots:
       value: '11'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5473&version=2.31
+    - tag: term
+      value: Biomarker Name
   biomarker_result:
-    description: 'Text term to define the results of genetic testing.
-
-      '
-    name: Laboratory Procedure Genetic Abnormality Test Result Type
+    description: 'Text term to define the results of genetic testing.'
     annotations:
     - tag: source
       value: caDSR
@@ -508,11 +464,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3234680&version=1.0
+    - tag: term
+      value: Laboratory Procedure Genetic Abnormality Test Result Type
   biomarker_test_method:
-    description: 'Text descriptor of a molecular analysis method used for an individual.
-
-      '
-    name: Disease Detection Molecular Analysis Method Type
+    description: 'Text descriptor of a molecular analysis method used for an individual.'
     annotations:
     - tag: source
       value: caDSR
@@ -522,13 +477,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3121575&version=1.0
+    - tag: term
+      value: Disease Detection Molecular Analysis Method Type
   biospecimen_anatomic_site_id:
     description: 'Uberon ID, anatomical location as described by the Uber Anatomy
-      Ontology (UBERON). (CMG)
-
-      '
-    name: Uberon ID, anatomical location as described by the Uber Anatomy Ontology
-      (UBERON). (CMG)
+      Ontology (UBERON). (CMG)'
     annotations:
     - tag: source
       value: Uberon
@@ -538,13 +491,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://www.ebi.ac.uk/ols/ontologies/uberon
+    - tag: term
+      value: Uberon ID, anatomical location as described by the Uber Anatomy Ontology
+        (UBERON). (CMG)
   biospecimen_anatomic_site_label:
     description: 'Uberon Label, anatomical location as described by the Uber Anatomy
-      Ontology (UBERON). (CMG)
-
-      '
-    name: Uberon Label, anatomical location as described by the Uber Anatomy Ontology
-      (UBERON). (CMG)
+      Ontology (UBERON). (CMG)'
     annotations:
     - tag: source
       value: Uberon
@@ -554,13 +506,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://www.ebi.ac.uk/ols/ontologies/uberon
+    - tag: term
+      value: Uberon Label, anatomical location as described by the Uber Anatomy Ontology
+        (UBERON). (CMG)
   bmi:
     description: 'Autocalculated field of BMI: general indicator of the body fat an
       individual is carrying based upon the ratio of weight to height. BMI = 703 *
-      weight in pounds/height in inches squared. (GTEx)
-
-      '
-    name: Body Mass Index (BMI)
+      weight in pounds/height in inches squared. (GTEx)'
     annotations:
     - tag: source
       value: caDSR
@@ -570,12 +522,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=4973892&version=1.0
+    - tag: term
+      value: Body Mass Index (BMI)
   burkitt_lymphoma_clinical_variant:
     description: 'Burkitt''s lymphoma categorization based on clinical features that
-      differ from other forms of the same disease.
-
-      '
-    name: Burkitt Lymphoma Clinical Variant Type
+      differ from other forms of the same disease.'
     annotations:
     - tag: source
       value: caDSR
@@ -585,11 +536,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3770421&version=1.0
+    - tag: term
+      value: Burkitt Lymphoma Clinical Variant Type
   cause_of_death:
-    description: 'Text term to identify the cause of death for a patient.
-
-      '
-    name: Patient Death Reason
+    description: 'Text term to identify the cause of death for a patient.'
     annotations:
     - tag: source
       value: caDSR
@@ -599,12 +549,11 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2554674&version=3.0
+    - tag: term
+      value: Patient Death Reason
   cea_level_preoperative:
     description: 'Numeric value of the Carcinoembryonic antigen or CEA at the time
-      before surgery. [Manually- curated]
-
-      '
-    name: Preoperative Carcinoembryonic Antigen Result Value
+      before surgery. [Manually- curated]'
     annotations:
     - tag: source
       value: caDSR
@@ -614,11 +563,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2716510&version=1.0
+    - tag: term
+      value: Preoperative Carcinoembryonic Antigen Result Value
   cigarettes_per_day:
-    description: 'The average number of cigarettes smoked per day.
-
-      '
-    name: Smoking Use Average Number
+    description: 'The average number of cigarettes smoked per day.'
     annotations:
     - tag: source
       value: caDSR
@@ -628,13 +576,12 @@ slots:
       value: '4'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2001716&version=4.0
+    - tag: term
+      value: Smoking Use Average Number
   circumferential_resection_margin:
     description: 'A value in millimeters indicating the measured length between a
       malignant lesion of the colon or rectum and the nearest radial (or circumferential)
-      border of tissue removed during cancer surgery.
-
-      '
-    name: Colorectal Surgical Margin Circumferential Distance Measurement
+      border of tissue removed during cancer surgery.'
     annotations:
     - tag: source
       value: caDSR
@@ -644,12 +591,11 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=64202&version=3.0
+    - tag: term
+      value: Colorectal Surgical Margin Circumferential Distance Measurement
   classification_of_tumor:
     description: 'Text that describes the kind of disease present in the tumor specimen
-      as related to a specific timepoint.
-
-      '
-    name: Tumor Tissue Disease Description Type
+      as related to a specific timepoint.'
     annotations:
     - tag: source
       value: caDSR
@@ -659,13 +605,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3288124&version=1.0
+    - tag: term
+      value: Tumor Tissue Disease Description Type
   colon_polyps_history:
     description: 'Yes/No indicator to describe if the subject had a previous history
       of colon polyps as noted in the history/physical or previous endoscopic report
-      (s).
-
-      '
-    name: Colon Carcinoma Polyp Occurrence Indicator
+      (s).'
     annotations:
     - tag: source
       value: caDSR
@@ -675,11 +620,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3107197&version=1.0
+    - tag: term
+      value: Colon Carcinoma Polyp Occurrence Indicator
   composition:
-    description: 'Text term that represents the cellular composition of the sample.
-
-      '
-    name: Biospecimen Cellular Composition Type
+    description: 'Text term that represents the cellular composition of the sample.'
     annotations:
     - tag: source
       value: caDSR
@@ -689,14 +633,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432591&version=1.0
+    - tag: term
+      value: Biospecimen Cellular Composition Type
   concentration:
     description: 'Numeric value that represents the concentration of an analyte or
       aliquot extracted from the sample or sample portion, measured in milligrams
-      per milliliter.
-
-      '
-    name: Biospecimen Analyte or Aliquot Extracted Concentration Milligram per Milliliter
-      Value
+      per milliliter.'
     annotations:
     - tag: source
       value: caDSR
@@ -706,11 +648,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432594&version=1.0
+    - tag: term
+      value: Biospecimen Analyte or Aliquot Extracted Concentration Milligram per
+        Milliliter Value
   creation_datetime:
-    description: 'The datetime of portion creation encoded as seconds from epoch.
-
-      '
-    name: Biospecimen Portion Creation Seconds Date/Time
+    description: 'The datetime of portion creation encoded as seconds from epoch.'
     annotations:
     - tag: source
       value: caDSR
@@ -720,12 +662,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432592&version=1.0
+    - tag: term
+      value: Biospecimen Portion Creation Seconds Date/Time
   current_weight:
     description: 'Numeric value that represents the current weight of the sample,
-      measured  in milligrams.
-
-      '
-    name: Tissue Sample Current Weight Milligram Value
+      measured  in milligrams.'
     annotations:
     - tag: source
       value: caDSR
@@ -735,33 +676,21 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432606&version=1.0
+    - tag: term
+      value: Tissue Sample Current Weight Milligram Value
   data_category:
-    description: 'Broad categorization of the contents of the data file.
-
-      '
+    description: 'Broad categorization of the contents of the data file.'
   data_file_error_type:
-    description: 'Type of error for the data file object.
-
-      '
+    description: 'Type of error for the data file object.'
   data_format:
-    description: 'Format of the data files.
-
-      '
+    description: 'Format of the data files.'
   data_type:
-    description: 'Specific content type of the data file. (CMG)
-
-      '
+    description: 'Specific content type of the data file. (CMG)'
   datetime:
-    description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-
-      '
+    description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]'
   days_to_birth:
     description: 'Time interval from a person''s date of birth to the date of initial
-      pathologic diagnosis, represented as a calculated negative number of days.
-
-      '
-    name: Person Birth Date Less Initial Pathologic Diagnosis Date Calculated Day
-      Value
+      pathologic diagnosis, represented as a calculated negative number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -771,13 +700,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3008233&version=1.0
+    - tag: term
+      value: Person Birth Date Less Initial Pathologic Diagnosis Date Calculated Day
+        Value
   days_to_collection:
     description: 'Time interval from the date of biospecimen collection to the date
-      of initial pathologic diagnosis, represented as a calculated number of days.
-
-      '
-    name: Biospecimen Collection Date Less Initial Pathologic Diagnosis Date Calculated
-      Day Value
+      of initial pathologic diagnosis, represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -787,12 +715,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3008340&version=1.0
+    - tag: term
+      value: Biospecimen Collection Date Less Initial Pathologic Diagnosis Date Calculated
+        Day Value
   days_to_death:
     description: 'Time interval from a person''s date of death to the date of initial
-      pathologic diagnosis, represented as a calculated number of days.
-
-      '
-    name: Death Less Initial Pathologic Diagnosis Date Calculated Day Value
+      pathologic diagnosis, represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -802,14 +730,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3165475&version=1.0
+    - tag: term
+      value: Death Less Initial Pathologic Diagnosis Date Calculated Day Value
   days_to_hiv_diagnosis:
     description: 'Time interval from the date of the initial pathologic diagnosis
       to the date of human immunodeficiency diagnosis, represented as a calculated
-      number of days.
-
-      '
-    name: Human Immunodeficiency Virus Diagnosis Subtract Initial Pathologic Diagnosis
-      Time Duration Day Calculation Value
+      number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -819,13 +745,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=4618491&version=1.0
+    - tag: term
+      value: Human Immunodeficiency Virus Diagnosis Subtract Initial Pathologic Diagnosis
+        Time Duration Day Calculation Value
   days_to_last_follow_up:
     description: 'Time interval from the date of last follow up to the date of initial
-      pathologic diagnosis, represented as a calculated number of days.
-
-      '
-    name: Last Communication Contact Less Initial Pathologic Diagnosis Date Calculated
-      Day Value
+      pathologic diagnosis, represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -835,13 +760,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3008273&version=1.0
+    - tag: term
+      value: Last Communication Contact Less Initial Pathologic Diagnosis Date Calculated
+        Day Value
   days_to_last_known_disease_status:
     description: 'Time interval from the date of last follow up to the date of initial
-      pathologic diagnosis, represented as a calculated number of days.
-
-      '
-    name: Last Communication Contact Less Initial Pathologic Diagnosis Date Calculated
-      Day Value
+      pathologic diagnosis, represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -851,13 +775,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3008273&version=1.0
+    - tag: term
+      value: Last Communication Contact Less Initial Pathologic Diagnosis Date Calculated
+        Day Value
   days_to_new_event:
     description: 'Time interval from the date of new tumor event including progression,
       recurrence and new primary malignacies to the date of initial pathologic diagnosis,
-      represented as a calculated number of days.
-
-      '
-    name: New Tumor Event Less Initial Pathologic Diagnosis Date Calculated Day Value
+      represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -867,13 +791,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3392464&version=1.0
+    - tag: term
+      value: New Tumor Event Less Initial Pathologic Diagnosis Date Calculated Day
+        Value
   days_to_recurrence:
     description: 'Time interval from the date of new tumor event including progression,
       recurrence and new primary malignancies to the date of initial pathologic diagnosis,
-      represented as a calculated number of days.
-
-      '
-    name: New Tumor Event Less Initial Pathologic Diagnosis Date Calculated Day Value
+      represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -883,17 +807,15 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3392464&version=1.0
+    - tag: term
+      value: New Tumor Event Less Initial Pathologic Diagnosis Date Calculated Day
+        Value
   days_to_sample_procurement:
     description: 'The number of days from the date the patient was diagnosed to the
-      date of the procedure that produced the sample.
-
-      '
+      date of the procedure that produced the sample.'
   days_to_treatment:
     description: 'Number of days from date of initial pathologic diagnosis that treatment
-      began.
-
-      '
-    name: Days to Treatment Start
+      began.'
     annotations:
     - tag: source
       value: null
@@ -903,12 +825,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Days to Treatment Start
   days_to_treatment_end:
     description: 'Time interval from the date of the initial pathologic diagnosis
-      to the date of treatment end, represented as a calculated number of days.
-
-      '
-    name: Treatment End Subtract First Pathologic Diagnosis Day Calculation Value
+      to the date of treatment end, represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -918,13 +839,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5102431&version=1.0
+    - tag: term
+      value: Treatment End Subtract First Pathologic Diagnosis Day Calculation Value
   days_to_treatment_start:
     description: 'Time interval from the date of the initial pathologic diagnosis
-      to the start of treatment, represented as a calculated number of days.
-
-      '
-    name: Treatment Start Subtract First Pathologic Diagnosis Time Day Calculation
-      Value
+      to the start of treatment, represented as a calculated number of days.'
     annotations:
     - tag: source
       value: caDSR
@@ -934,13 +853,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5102411&version=1.0
+    - tag: term
+      value: Treatment Start Subtract First Pathologic Diagnosis Time Day Calculation
+        Value
   diagnosis_pathologically_confirmed:
     description: 'The histologic description of tissue or cells confirmed by a pathology
       review of frozen or formalin fixed slide(s) completed after the diagnostic pathology
-      review of the tumor sample used to extract analyte(s).
-
-      '
-    name: Post-Diagnostic Pathology Review Confirmation
+      review of the tumor sample used to extract analyte(s).'
     annotations:
     - tag: source
       value: null
@@ -950,13 +869,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Post-Diagnostic Pathology Review Confirmation
   dlco_ref_predictive_percent:
     description: 'The value, as a percentage of predicted lung volume, measuring the
-      amount of carbon monoxide detected in a patient''s lungs.
-
-      '
-    name: Lung Carbon Monoxide Diffusing Capability Test Assessment Predictive Value
-      Percentage Value
+      amount of carbon monoxide detected in a patient''s lungs.'
     annotations:
     - tag: source
       value: caDSR
@@ -966,11 +883,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2180255&version=1.0
+    - tag: term
+      value: Lung Carbon Monoxide Diffusing Capability Test Assessment Predictive
+        Value Percentage Value
   encoding:
-    description: 'Version of ASCII encoding of quality values found in the file.
-
-      '
-    name: Encoding
+    description: 'Version of ASCII encoding of quality values found in the file.'
     annotations:
     - tag: source
       value: FastQC
@@ -980,12 +897,11 @@ slots:
       value: null
     - tag: term_url
       value: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/1%20Basic%20Statistics.html
+    - tag: term
+      value: Encoding
   estrogen_receptor_percent_positive_ihc:
     description: 'Classification to represent ER Positive results expressed as a percentage
-      value.
-
-      '
-    name: ER Level Cell Percentage Category
+      value.'
     annotations:
     - tag: source
       value: caDSR
@@ -995,12 +911,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3128341&version=1.0
+    - tag: term
+      value: ER Level Cell Percentage Category
   estrogen_receptor_result_ihc:
     description: 'Text term to represent the overall result of Estrogen Receptor (ER)
-      testing.
-
-      '
-    name: Breast Carcinoma Estrogen Receptor Status
+      testing.'
     annotations:
     - tag: source
       value: caDSR
@@ -1010,14 +925,13 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2957359&version=2.0
+    - tag: term
+      value: Breast Carcinoma Estrogen Receptor Status
   ethnicity:
     description: 'An individual''s self-described social and cultural grouping, specifically
       whether an individual describes themselves as Hispanic or Latino (HARMONIZED).
       The provided values are based on the categories defined by the U.S. Office of
-      Management and Business and used by the U.S. Census Bureau. (CMG, GTEx)
-
-      '
-    name: Ethnic Group Category Text
+      Management and Business and used by the U.S. Census Bureau. (CMG, GTEx)'
     annotations:
     - tag: source
       value: caDSR
@@ -1027,27 +941,19 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2192217&version=2.0
+    - tag: term
+      value: Ethnic Group Category Text
   experiment_name:
-    description: 'Submitter-defined name for the experiment.
-
-      '
+    description: 'Submitter-defined name for the experiment.'
   experimental_strategy:
     description: 'The sequencing strategy used to generate the data file referred
-      to by the ga4gh_drs_uri.
-
-      '
+      to by the ga4gh_drs_uri.'
   fastq_name:
-    description: 'Names of FASTQs.
-
-      '
+    description: 'Names of FASTQs.'
   fev1_ref_post_bronch_percent:
     description: 'The percentage comparison to a normal value reference range of the
       volume of air that a patient can forcibly exhale from the lungs in one second
-      post-bronchodilator.
-
-      '
-    name: Post Bronchodilator Lung Forced Expiratory Volume 1 Test Lab Percentage
-      Value
+      post-bronchodilator.'
     annotations:
     - tag: source
       value: caDSR
@@ -1057,13 +963,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3302948&version=1.0
+    - tag: term
+      value: Post Bronchodilator Lung Forced Expiratory Volume 1 Test Lab Percentage
+        Value
   fev1_ref_pre_bronch_percent:
     description: 'The percentage comparison to a normal value reference range of the
       volume of air that a patient can forcibly exhale from the lungs in one second
-      pre-bronchodilator.
-
-      '
-    name: Pre Bronchodilator Lung Forced Expiratory Volume 1 Test Lab Percentage Value
+      pre-bronchodilator.'
     annotations:
     - tag: source
       value: caDSR
@@ -1073,12 +979,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3302947&version=1.0
+    - tag: term
+      value: Pre Bronchodilator Lung Forced Expiratory Volume 1 Test Lab Percentage
+        Value
   fev1_fvc_post_bronch_percent:
     description: 'Percentage value to represent result of Forced Expiratory Volume
-      in 1 second (FEV1) divided by the Forced Vital Capacity (FVC) post-bronchodilator.
-
-      '
-    name: Post Bronchodilator FEV1/FVC Percent Value
+      in 1 second (FEV1) divided by the Forced Vital Capacity (FVC) post-bronchodilator.'
     annotations:
     - tag: source
       value: caDSR
@@ -1088,12 +994,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3302956&version=1.0
+    - tag: term
+      value: Post Bronchodilator FEV1/FVC Percent Value
   fev1_fvc_pre_bronch_percent:
     description: 'Percentage value to represent result of Forced Expiratory Volume
-      in 1 second (FEV1) divided by the Forced Vital Capacity (FVC) pre-bronchodilator.
-
-      '
-    name: Pre Bronchodilator FEV1/FVC Percent Value
+      in 1 second (FEV1) divided by the Forced Vital Capacity (FVC) pre-bronchodilator.'
     annotations:
     - tag: source
       value: caDSR
@@ -1103,14 +1008,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3302955&version=1.0
+    - tag: term
+      value: Pre Bronchodilator FEV1/FVC Percent Value
   figo_stage:
     description: 'The extent of a cervical or endometrial cancer within the body,
       especially whether the disease has spread from the original site to other parts
       of the body, as described by the International Federation of Gynecology and
-      Obstetrics (FIGO) stages.
-
-      '
-    name: Gynecologic Tumor Grouping Cervical Endometrial FIGO 2009 Stage
+      Obstetrics (FIGO) stages.'
     annotations:
     - tag: source
       value: caDSR
@@ -1120,31 +1024,20 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3225684&version=1.0
+    - tag: term
+      value: Gynecologic Tumor Grouping Cervical Endometrial FIGO 2009 Stage
   file_format:
-    description: 'The format of the data file object.
-
-      '
+    description: 'The format of the data file object.'
   file_name:
-    description: 'The name (or part of a name) of a file (of any type).
-
-      '
+    description: 'The name (or part of a name) of a file (of any type).'
   file_size:
-    description: 'The size of the data file (object) in bytes.
-
-      '
+    description: 'The size of the data file (object) in bytes.'
   file_state:
-    description: 'The current state of the data file object.
-
-      '
+    description: 'The current state of the data file object.'
   flow_cell_barcode:
-    description: 'Flow Cell Barcode.
-
-      '
+    description: 'Flow Cell Barcode.'
   freezing_method:
-    description: 'Text term that represents the method used for freezing the sample.
-
-      '
-    name: Tissue Sample Freezing Method Type
+    description: 'Text term that represents the method used for freezing the sample.'
     annotations:
     - tag: source
       value: caDSR
@@ -1154,18 +1047,15 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432607&version=1.0
+    - tag: term
+      value: Tissue Sample Freezing Method Type
   ga4gh_drs_uri:
-    description: 'DRS URI as defined by GA4GH DRS spec for pointers to file objects.
-
-      '
+    description: 'DRS URI as defined by GA4GH DRS spec for pointers to file objects.'
   sex:
     description: 'Text designations that identify gender (HARMONIZED). Gender is described
       as the assemblage of properties that distinguish people on the basis of their
       societal roles. [Explanatory Comment 1: Identification of gender is based upon
-      self-report and may come from a form, questionnaire, interview, etc.] (CMG)
-
-      '
-    name: Person Gender Text Type
+      self-report and may come from a form, questionnaire, interview, etc.] (CMG)'
     annotations:
     - tag: source
       value: caDSR
@@ -1175,12 +1065,11 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2200604&version=3.0
+    - tag: term
+      value: Person Gender Text Type
   height:
     description: 'The height of Donor in inches as reported by Donor, family/next
-      of kin, or medical record abstraction. (GTEx)
-
-      '
-    name: Patient Height Measurement
+      of kin, or medical record abstraction. (GTEx)'
     annotations:
     - tag: source
       value: caDSR
@@ -1190,12 +1079,11 @@ slots:
       value: '4.1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=649&version=4.1
+    - tag: term
+      value: Patient Height Measurement
   her2_erbb2_percent_positive_ihc:
     description: 'Classification to represent the number of positive HER2/ERBB2 cells
-      in a specimen or sample.
-
-      '
-    name: HER2 ERBB Positive Finding Cell Percentage Category
+      in a specimen or sample.'
     annotations:
     - tag: source
       value: caDSR
@@ -1205,12 +1093,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3086980&version=1.0
+    - tag: term
+      value: HER2 ERBB Positive Finding Cell Percentage Category
   her2_erbb2_result_fish:
     description: 'the type of outcome for HER2 as determined by an in situ hybridization
-      (ISH) assay.
-
-      '
-    name: Laboratory Procedure HER2/neu in situ Hybridization Outcome Type
+      (ISH) assay.'
     annotations:
     - tag: source
       value: caDSR
@@ -1220,13 +1107,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2854089&version=1.0
+    - tag: term
+      value: Laboratory Procedure HER2/neu in situ Hybridization Outcome Type
   her2_erbb2_result_ihc:
     description: 'Text term to signify the result of the medical procedure that involves
       testing a sample of blood or tissue for HER2 by histochemical localization of
-      immunoreactive substances using labeled antibodies as reagents.
-
-      '
-    name: Laboratory Procedure HER2/neu Immunohistochemistry Receptor Status
+      immunoreactive substances using labeled antibodies as reagents.'
     annotations:
     - tag: source
       value: caDSR
@@ -1236,13 +1122,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2957563&version=2.0
+    - tag: term
+      value: Laboratory Procedure HER2/neu Immunohistochemistry Receptor Status
   hiv_positive:
     description: 'Text term to signify whether a physician has diagnosed HIV infection
-      in a patient.
-
-      '
-    name: Physician Diagnosed HIV Infection Personal Medical History Yes No Not Applicable
-      Indicator
+      in a patient.'
     annotations:
     - tag: source
       value: caDSR
@@ -1252,12 +1136,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=4030799&version=1.0
+    - tag: term
+      value: Physician Diagnosed HIV Infection Personal Medical History Yes No Not
+        Applicable Indicator
   hpv_positive_type:
     description: 'Text classification to represent the strain or type of human papillomavirus
-      identified in an individual.
-
-      '
-    name: Human Papillomavirus Type
+      identified in an individual.'
     annotations:
     - tag: source
       value: caDSR
@@ -1267,11 +1151,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2922649&version=1.0
+    - tag: term
+      value: Human Papillomavirus Type
   hpv_status:
-    description: 'The findings of the oncogenic HPV.
-
-      '
-    name: Oncogenic Human Papillomavirus Result Type
+    description: 'The findings of the oncogenic HPV.'
     annotations:
     - tag: source
       value: caDSR
@@ -1281,16 +1164,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2230033&version=1.0
+    - tag: term
+      value: Oncogenic Human Papillomavirus Result Type
   includes_spike_ins:
-    description: 'Spike-in included?
-
-      '
+    description: 'Spike-in included?'
   initial_weight:
     description: 'Numeric value that represents the initial weight of the sample,
-      measured in milligrams.
-
-      '
-    name: Tissue Sample Initial Weight Milligram Value
+      measured in milligrams.'
     annotations:
     - tag: source
       value: caDSR
@@ -1300,13 +1180,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432605&version=1.0
+    - tag: term
+      value: Tissue Sample Initial Weight Milligram Value
   instrument_model:
     description: 'Numeric value that represents the sample dimension that is greater
       than the shortest dimension and less than the longest dimension, measured in
-      millimeters.
-
-      '
-    name: Tissue Sample Intermediate Dimension Millimeter Measurement
+      millimeters.'
     annotations:
     - tag: source
       value: caDSR
@@ -1316,16 +1195,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432604&version=1.0
+    - tag: term
+      value: Tissue Sample Intermediate Dimension Millimeter Measurement
   intermediate_dimension:
-    description: 'Intermediate dimension of the sample, in millimeters.
-
-      '
+    description: 'Intermediate dimension of the sample, in millimeters.'
   is_ffpe:
     description: 'Indicator to signify whether or not the tissue sample was fixed
-      in formalin and embedded in paraffin (FFPE).
-
-      '
-    name: Specimen Processing Formalin Fixed Paraffin Embedded Tissue Indicator
+      in formalin and embedded in paraffin (FFPE).'
     annotations:
     - tag: source
       value: caDSR
@@ -1335,20 +1211,15 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=4170557&version=1.0
+    - tag: term
+      value: Specimen Processing Formalin Fixed Paraffin Embedded Tissue Indicator
   is_paired_end:
-    description: 'Are the reads paired end?
-
-      '
+    description: 'Are the reads paired end?'
   is_proband:
-    description: 'Boolean value to determine if the case is the proband.
-
-      '
+    description: 'Boolean value to determine if the case is the proband.'
   last_known_disease_status:
     description: 'Text term that describes the last known state or condition of an
-      individual''s neoplasm.
-
-      '
-    name: Person Last Known Neoplasm Status
+      individual''s neoplasm.'
     annotations:
     - tag: source
       value: caDSR
@@ -1358,12 +1229,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2759550&version=1.0
+    - tag: term
+      value: Person Last Known Neoplasm Status
   laterality:
     description: 'For tumors in paired organs, designates the side on which the cancer
-      originates.
-
-      '
-    name: Primary Tumor Laterality
+      originates.'
     annotations:
     - tag: source
       value: caDSR
@@ -1373,13 +1243,11 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=827&version=3.0
+    - tag: term
+      value: Primary Tumor Laterality
   ldh_level_at_diagnosis:
     description: 'The 2 decimal place numeric laboratory value measured, assigned
-      or computed related to the assessment of lactate dehydrogenase in a specimen.
-
-      '
-    name: Laboratory Procedure Lactate Dehydrogenase Result Integer::2 Decimal Place
-      Value
+      or computed related to the assessment of lactate dehydrogenase in a specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1389,14 +1257,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2798766&version=1.0
+    - tag: term
+      value: Laboratory Procedure Lactate Dehydrogenase Result Integer::2 Decimal
+        Place Value
   ldh_normal_range_upper:
     description: 'The top value of the range of statistical characteristics that are
       supposed to represent accepted standard, non-pathological pattern for lactate
-      dehydrogenase (units not specified).
-
-      '
-    name: Laboratory Procedure Lactate Dehydrogenase Result Upper Limit of Normal
-      Value
+      dehydrogenase (units not specified).'
     annotations:
     - tag: source
       value: caDSR
@@ -1406,44 +1273,28 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2597015&version=1.0
+    - tag: term
+      value: Laboratory Procedure Lactate Dehydrogenase Result Upper Limit of Normal
+        Value
   library_strategy:
-    description: 'Library strategy.
-
-      '
+    description: 'Library strategy.'
   library_selection:
-    description: 'Library Selection Method
-
-      '
+    description: 'Library Selection Method'
   library_name:
-    description: 'Name of the library.
-
-      '
+    description: 'Name of the library.'
   library_preparation_kit_name:
-    description: 'Name of Library Preparation Kit
-
-      '
+    description: 'Name of Library Preparation Kit'
   library_preparation_kit_vendor:
-    description: 'Vendor of Library Preparation Kit
-
-      '
+    description: 'Vendor of Library Preparation Kit'
   library_preparation_kit_catalog_number:
-    description: 'Catalog of Library Preparation Kit
-
-      '
+    description: 'Catalog of Library Preparation Kit'
   library_preparation_kit_version:
-    description: 'Version of Library Preparation Kit
-
-      '
+    description: 'Version of Library Preparation Kit'
   library_strand:
-    description: 'Library stranded-ness.
-
-      '
+    description: 'Library stranded-ness.'
   longest_dimension:
     description: 'Numeric value that represents the longest dimension of the sample,
-      measured in millimeters.
-
-      '
-    name: Tissue Sample Longest Dimension Millimeter Measurement
+      measured in millimeters.'
     annotations:
     - tag: source
       value: caDSR
@@ -1453,12 +1304,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432602&version=1.0
+    - tag: term
+      value: Tissue Sample Longest Dimension Millimeter Measurement
   lymph_nodes_positive:
     description: 'The number of lymph nodes involved with disease as determined by
-      pathologic examination.
-
-      '
-    name: Lymph Node(s) Positive Number
+      pathologic examination.'
     annotations:
     - tag: source
       value: caDSR
@@ -1468,12 +1318,11 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=89&version=3.0
+    - tag: term
+      value: Lymph Node(s) Positive Number
   lymphatic_invasion_present:
     description: 'A yes/no indicator to ask if small or thin-walled vessel invasion
-      is present, indicating lymphatic involvement
-
-      '
-    name: Lymphatic/Small vessel Invasion Ind
+      is present, indicating lymphatic involvement'
     annotations:
     - tag: source
       value: caDSR
@@ -1483,11 +1332,10 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=64171&version=3.0
+    - tag: term
+      value: Lymphatic/Small vessel Invasion Ind
   method_of_diagnosis:
-    description: 'The method used to initially the patient''s diagnosis.
-
-      '
-    name: Method of Diagnosis
+    description: 'The method used to initially the patient''s diagnosis.'
     annotations:
     - tag: source
       value: null
@@ -1497,11 +1345,10 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Method of Diagnosis
   method_of_sample_procurement:
-    description: 'The method used to procure the sample used to extract analyte(s).
-
-      '
-    name: Method of Sample Procurement
+    description: 'The method used to procure the sample used to extract analyte(s).'
     annotations:
     - tag: source
       value: null
@@ -1511,17 +1358,14 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Method of Sample Procurement
   md5sum:
     description: 'The 128-bit hash value expressed as a 32 digit hexadecimal number
-      used as a file''s digital fingerprint.
-
-      '
+      used as a file''s digital fingerprint.'
   microsatellite_instability_abnormal:
     description: 'The yes/no indicator to signify the status of a tumor for microsatellite
-      instability.
-
-      '
-    name: Microsatellite Instability Occurrence Indicator
+      instability.'
     annotations:
     - tag: source
       value: caDSR
@@ -1531,6 +1375,8 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3123142&version=1.0
+    - tag: term
+      value: Microsatellite Instability Occurrence Indicator
   morphology:
     description: 'The third edition of the International Classification of Diseases
       for Oncology, published in 2000 used principally in tumor and cancer registries
@@ -1539,11 +1385,7 @@ slots:
       tissues and, finally, the association among these to form organs. In pathology,
       the microscopic process of identifying normal and abnormal morphologic characteristics
       in tissues, by employing various cytochemical and immunocytochemical stains.
-      A system of numbered categories for representation of data.
-
-      '
-    name: International Classification of Diseases for Oncology, Third Edition ICD-O-3
-      Histology Code
+      A system of numbered categories for representation of data.'
     annotations:
     - tag: source
       value: caDSR
@@ -1553,12 +1395,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3226275&version=1.0
+    - tag: term
+      value: International Classification of Diseases for Oncology, Third Edition
+        ICD-O-3 Histology Code
   new_event_anatomic_site:
     description: 'Text term to specify the anatomic location of the return of tumor
-      after treatment.
-
-      '
-    name: New Neoplasm Event Occurrence Anatomic Site
+      after treatment.'
     annotations:
     - tag: source
       value: caDSR
@@ -1568,11 +1410,10 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3108271&version=2.0
+    - tag: term
+      value: New Neoplasm Event Occurrence Anatomic Site
   new_event_type:
-    description: 'Text term to identify a new tumor event.
-
-      '
-    name: New Neoplasm Event Type
+    description: 'Text term to identify a new tumor event.'
     annotations:
     - tag: source
       value: caDSR
@@ -1582,12 +1423,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3119721&version=1.0
+    - tag: term
+      value: New Neoplasm Event Type
   normal_tumor_genotype_snp_match:
     description: 'Text term that represents whether or not the genotype of the normal
-      tumor matches or if the data is not available.
-
-      '
-    name: Normal Tumor Genotype Match Indicator
+      tumor matches or if the data is not available.'
     annotations:
     - tag: source
       value: caDSR
@@ -1597,12 +1437,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=4588156&version=1.0
+    - tag: term
+      value: Normal Tumor Genotype Match Indicator
   number_proliferating_cells:
     description: 'Numeric value that represents the count of proliferating cells determined
-      during pathologic review of the sample slide(s).
-
-      '
-    name: Pathology Review Slide Proliferating Cell Count
+      during pathologic review of the sample slide(s).'
     annotations:
     - tag: source
       value: caDSR
@@ -1612,12 +1451,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432636&version=1.0
+    - tag: term
+      value: Pathology Review Slide Proliferating Cell Count
   oct_embedded:
     description: 'Indicator of whether or not the sample was embedded in Optimal Cutting
-      Temperature (OCT) compound.
-
-      '
-    name: Tissue Sample Optimal Cutting Temperature Compound Embedding Indicator
+      Temperature (OCT) compound.'
     annotations:
     - tag: source
       value: caDSR
@@ -1627,13 +1465,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432538&version=1.0
+    - tag: term
+      value: Tissue Sample Optimal Cutting Temperature Compound Embedding Indicator
   years_smoked:
     description: 'Numeric value (or unknown) to represent the number of years a person
       has been smoking (HARMONIZED). If the number of years is greater than 89, see
-      ''years_smoked_gt89''.
-
-      '
-    name: Person Smoking Duration Year Count
+      ''years_smoked_gt89''.'
     annotations:
     - tag: source
       value: caDSR
@@ -1643,12 +1480,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3137957&version=1.0
+    - tag: term
+      value: Person Smoking Duration Year Count
   percent_eosinophil_infiltration:
     description: 'Numeric value to represent the percentage of infiltration by eosinophils
-      in a tumor sample or specimen.
-
-      '
-    name: Specimen Eosinophilia Percentage Value
+      in a tumor sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1658,11 +1494,10 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2897700&version=2.0
+    - tag: term
+      value: Specimen Eosinophilia Percentage Value
   percent_gc_content:
-    description: 'The overall %GC of all bases in all sequences.
-
-      '
-    name: '%GC'
+    description: 'The overall %GC of all bases in all sequences.'
     annotations:
     - tag: source
       value: FastQC
@@ -1672,12 +1507,11 @@ slots:
       value: null
     - tag: term_url
       value: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/1%20Basic%20Statistics.html
+    - tag: term
+      value: '%GC'
   percent_granulocyte_infiltration:
     description: 'Numeric value to represent the percentage of infiltration by granulocytes
-      in a tumor sample or specimen.
-
-      '
-    name: Specimen Granulocyte Infiltration Percentage Value
+      in a tumor sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1687,14 +1521,13 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2897705&version=2.0
+    - tag: term
+      value: Specimen Granulocyte Infiltration Percentage Value
   percent_inflam_infiltration:
     description: 'Numeric value to represent local response to cellular injury, marked
       by capillary dilatation, edema and leukocyte infiltration; clinically, inflammation
       is manifest by reddness, heat, pain, swelling and loss of function, with the
-      need to heal damaged tissue.
-
-      '
-    name: Specimen Inflammation Change Percentage Value
+      need to heal damaged tissue.'
     annotations:
     - tag: source
       value: caDSR
@@ -1704,12 +1537,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2897695&version=1.0
+    - tag: term
+      value: Specimen Inflammation Change Percentage Value
   percent_lymphocyte_infiltration:
     description: 'Numeric value to represent the percentage of infiltration by lymphocytes
-      in a solid tissue normal sample or specimen.
-
-      '
-    name: Specimen Lymphocyte Infiltration Percentage Value
+      in a solid tissue normal sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1719,12 +1551,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2897710&version=2.0
+    - tag: term
+      value: Specimen Lymphocyte Infiltration Percentage Value
   percent_monocyte_infiltration:
     description: 'Numeric value to represent the percentage of monocyte infiltration
-      in a sample or specimen.
-
-      '
-    name: Specimen Monocyte Infiltration Percentage Value
+      in a sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1734,12 +1565,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5455535&version=1.0
+    - tag: term
+      value: Specimen Monocyte Infiltration Percentage Value
   percent_necrosis:
     description: 'Numeric value to represent the percentage of cell death in a malignant
-      tumor sample or specimen.
-
-      '
-    name: Malignant Neoplasm Necrosis Percentage Value
+      tumor sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1749,12 +1579,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2841237&version=1.0
+    - tag: term
+      value: Malignant Neoplasm Necrosis Percentage Value
   percent_neutrophil_infiltration:
     description: 'Numeric value to represent the percentage of infiltration by neutrophils
-      in a tumor sample or specimen.
-
-      '
-    name: Malignant Neoplasm Neutrophil Infiltration Percentage Cell Value
+      in a tumor sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1764,12 +1593,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2841267&version=1.0
+    - tag: term
+      value: Malignant Neoplasm Neutrophil Infiltration Percentage Cell Value
   percent_normal_cells:
     description: 'Numeric value to represent the percentage of normal cell content
-      in a malignant tumor sample or specimen.
-
-      '
-    name: Malignant Neoplasm Normal Cell Percentage Value
+      in a malignant tumor sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1779,13 +1607,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2841233&version=1.0
+    - tag: term
+      value: Malignant Neoplasm Normal Cell Percentage Value
   percent_stromal_cells:
     description: 'Numeric value to represent the percentage of reactive cells that
       are present in a malignant tumor sample or specimen but are not malignant such
-      as fibroblasts, vascular structures, etc.
-
-      '
-    name: Malignant Neoplasm Stromal Cell Percentage Value
+      as fibroblasts, vascular structures, etc.'
     annotations:
     - tag: source
       value: caDSR
@@ -1795,12 +1622,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2841241&version=1.0
+    - tag: term
+      value: Malignant Neoplasm Stromal Cell Percentage Value
   percent_tumor_cells:
     description: 'Numeric value that represents the percentage of infiltration by
-      granulocytes in a sample.
-
-      '
-    name: Specimen Tumor Cell Percentage Value
+      granulocytes in a sample.'
     annotations:
     - tag: source
       value: caDSR
@@ -1810,12 +1636,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432686&version=1.0
+    - tag: term
+      value: Specimen Tumor Cell Percentage Value
   percent_tumor_nuclei:
     description: 'Numeric value to represent the percentage of tumor nuclei in a malignant
-      neoplasm sample or specimen.
-
-      '
-    name: Malignant Neoplasm Neoplasm Nucleus Percentage Cell Value
+      neoplasm sample or specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -1825,12 +1650,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2841225&version=1.0
+    - tag: term
+      value: Malignant Neoplasm Neoplasm Nucleus Percentage Cell Value
   perineural_invasion_present:
     description: 'a yes/no indicator to ask if perineural invasion or infiltration
-      of tumor or cancer is present.
-
-      '
-    name: Tumor Perineural Invasion Ind
+      of tumor or cancer is present.'
     annotations:
     - tag: source
       value: caDSR
@@ -1840,16 +1664,13 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=64181&version=3.0
+    - tag: term
+      value: Tumor Perineural Invasion Ind
   platform:
-    description: 'Name of the platform used to obtain data.
-
-      '
+    description: 'Name of the platform used to obtain data.'
   portion_number:
     description: 'Numeric value that represents the sequential number assigned to
-      a portion of the sample.
-
-      '
-    name: Biospecimen Portion Sequence Number
+      a portion of the sample.'
     annotations:
     - tag: source
       value: caDSR
@@ -1859,12 +1680,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432711&version=1.0
+    - tag: term
+      value: Biospecimen Portion Sequence Number
   portion_weight:
     description: 'Numeric value that represents the sample portion weight, measured
-      in milligrams.
-
-      '
-    name: Biospecimen Portion Weight Milligram Value
+      in milligrams.'
     annotations:
     - tag: source
       value: caDSR
@@ -1874,11 +1694,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432593&version=1.0
+    - tag: term
+      value: Biospecimen Portion Weight Milligram Value
   preservation_method:
-    description: 'Text term that represents the method used to preserve the sample.
-
-      '
-    name: Tissue Sample Preservation Method Type
+    description: 'Text term that represents the method used to preserve the sample.'
     annotations:
     - tag: source
       value: caDSR
@@ -1888,12 +1707,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432521&version=1.0
+    - tag: term
+      value: Tissue Sample Preservation Method Type
   prior_malignancy:
     description: 'Text term to describe the patient''s history of prior cancer diagnosis
-      and the spatial location of any previous cancer occurrence.
-
-      '
-    name: Prior Cancer Diagnosis Occurrence Description Text
+      and the spatial location of any previous cancer occurrence.'
     annotations:
     - tag: source
       value: caDSR
@@ -1903,13 +1721,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3382736&version=2.0
+    - tag: term
+      value: Prior Cancer Diagnosis Occurrence Description Text
   prior_treatment:
     description: 'A yes/no/unknown/not applicable indicator related to the administration
-      of therapeutic agents received before the body specimen was collected.
-
-      '
-    name: Therapeutic Procedure Prior Specimen Collection Administered Yes No Unknown
-      Not Applicable Indicator
+      of therapeutic agents received before the body specimen was collected.'
     annotations:
     - tag: source
       value: caDSR
@@ -1919,12 +1735,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=4231463&version=1.0
+    - tag: term
+      value: Therapeutic Procedure Prior Specimen Collection Administered Yes No Unknown
+        Not Applicable Indicator
   progesterone_receptor_percent_positive_ihc:
     description: 'Classification to represent Progesterone Receptor Positive results
-      expressed as a percentage value.
-
-      '
-    name: Progesterone Receptor Level Cell Percentage Category
+      expressed as a percentage value.'
     annotations:
     - tag: source
       value: caDSR
@@ -1934,12 +1750,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3128342&version=1.0
+    - tag: term
+      value: Progesterone Receptor Level Cell Percentage Category
   progesterone_receptor_result_ihc:
     description: 'Text term to represent the overall result of Progresterone Receptor
-      (PR) testing.
-
-      '
-    name: Breast Carcinoma Progesterone Receptor Status
+      (PR) testing.'
     annotations:
     - tag: source
       value: caDSR
@@ -1949,12 +1764,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2957357&version=2.0
+    - tag: term
+      value: Breast Carcinoma Progesterone Receptor Status
   progression_or_recurrence:
     description: 'Yes/No/Unknown indicator to identify whether a patient has had a
-      new tumor event after initial treatment.
-
-      '
-    name: New Neoplasm Event Post Initial Therapy Indicator
+      new tumor event after initial treatment.'
     annotations:
     - tag: source
       value: caDSR
@@ -1964,17 +1778,14 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3121376&version=1.0
+    - tag: term
+      value: New Neoplasm Event Post Initial Therapy Indicator
   project_id:
     description: 'Unique ID for any specific defined piece of work that is undertaken
-      or attempted to meet a single requirement.
-
-      '
+      or attempted to meet a single requirement.'
   qc_metric_state:
     description: 'State classification given by FASTQC for the metric. Metric specific
-      details about the states are available on their website.
-
-      '
-    name: QC Metric State
+      details about the states are available on their website.'
     annotations:
     - tag: source
       value: FastQC
@@ -1984,6 +1795,8 @@ slots:
       value: null
     - tag: term_url
       value: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/
+    - tag: term
+      value: QC Metric State
   race:
     description: 'An arbitrary classification of a taxonomic group that is a division
       of a species (HARMONIZED). It usually arises as a consequence of geographical
@@ -1991,10 +1804,7 @@ slots:
       attributes and behavior, and in the case of humans, by common history, nationality,
       or geographic distribution. The provided values are based on the categories
       defined by the U.S. Office of Management and Business and used by the U.S. Census
-      Bureau. (GTEx)
-
-      '
-    name: Race Category Text
+      Bureau. (GTEx)'
     annotations:
     - tag: source
       value: caDSR
@@ -2004,19 +1814,14 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2192199&version=1.0
+    - tag: term
+      value: Race Category Text
   read_length:
-    description: 'The length of the reads.
-
-      '
+    description: 'The length of the reads.'
   read_group_name:
-    description: 'The name of the read group.
-
-      '
+    description: 'The name of the read group.'
   relationship_age_at_diagnosis:
-    description: 'The age (in years) when the patient''s relative was first diagnosed.
-
-      '
-    name: Relative Diagnosis Age Value
+    description: 'The age (in years) when the patient''s relative was first diagnosed.'
     annotations:
     - tag: source
       value: caDSR
@@ -2026,12 +1831,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5300571&version=1.0
+    - tag: term
+      value: Relative Diagnosis Age Value
   relationship_to_proband:
     description: 'The subgroup that describes the state of connectedness between members
-      of the unit of society organized around kinship ties.
-
-      '
-    name: Family Member Relationship Type
+      of the unit of society organized around kinship ties.'
     annotations:
     - tag: source
       value: caDSR
@@ -2041,12 +1845,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2690165&version=2.0
+    - tag: term
+      value: Family Member Relationship Type
   relationship_type:
     description: 'The subgroup that describes the state of connectedness between members
-      of the unit of society organized around kinship ties.
-
-      '
-    name: Family Member Relationship Type
+      of the unit of society organized around kinship ties.'
     annotations:
     - tag: source
       value: caDSR
@@ -2056,12 +1859,11 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2690165&version=2.0
+    - tag: term
+      value: Family Member Relationship Type
   relative_with_cancer_history:
     description: 'Indicator to signify whether or not an individual''s biological
-      relative has been diagnosed with another type of cancer.
-
-      '
-    name: Other Cancer Biological Relative History Indicator
+      relative has been diagnosed with another type of cancer.'
     annotations:
     - tag: source
       value: caDSR
@@ -2071,12 +1873,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3901752&version=1.0
+    - tag: term
+      value: Other Cancer Biological Relative History Indicator
   residual_disease:
     description: 'Text terms to describe the status of a tissue margin following surgical
-      resection.
-
-      '
-    name: Surgical Margin Resection Status
+      resection.'
     annotations:
     - tag: source
       value: caDSR
@@ -2086,13 +1887,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2608702&version=1.0
+    - tag: term
+      value: Surgical Margin Resection Status
   RIN:
     description: 'A numerical assessment of the integrity of RNA based on the entire
       electrophoretic trace of the RNA sample including the presence or absence of
-      degradation products.
-
-      '
-    name: Biospecimen RNA Integrity Number Value
+      degradation products.'
     annotations:
     - tag: source
       value: caDSR
@@ -2102,12 +1902,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5278775&version=1.0
+    - tag: term
+      value: Biospecimen RNA Integrity Number Value
   sample_type:
     description: 'Text term to describe the source of a biospecimen used for a laboratory
-      test.
-
-      '
-    name: Specimen Type Collection Biospecimen Type
+      test.'
     annotations:
     - tag: source
       value: caDSR
@@ -2117,24 +1916,17 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3111302&version=2.0
+    - tag: term
+      value: Specimen Type Collection Biospecimen Type
   sample_type_id:
-    description: 'The accompanying sample type id for the sample type.
-
-      '
+    description: 'The accompanying sample type id for the sample type.'
   section_location:
-    description: 'Tissue source of the slide.
-
-      '
+    description: 'Tissue source of the slide.'
   sequencing_center:
-    description: 'Name of the center that provided the sequence files.
-
-      '
+    description: 'Name of the center that provided the sequence files.'
   shortest_dimension:
     description: 'Numeric value that represents the shortest dimension of the sample,
-      measured in millimeters.
-
-      '
-    name: Tissue Sample Short Dimension Millimeter Measurement
+      measured in millimeters.'
     annotations:
     - tag: source
       value: caDSR
@@ -2144,16 +1936,14 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432603&version=1.0
+    - tag: term
+      value: Tissue Sample Short Dimension Millimeter Measurement
   site_of_resection_or_biopsy:
     description: 'The third edition of the International Classification of Diseases
       for Oncology, published in 2000, used principally in tumor and cancer registries
       for coding the site (topography) and the histology (morphology) of neoplasms.
       The description of an anatomical region or of a body part. Named locations of,
-      or within, the body. A system of numbered categories for representation of data.
-
-      '
-    name: International Classification of Diseases for Oncology, Third Edition ICD-O-3
-      Site Code
+      or within, the body. A system of numbered categories for representation of data.'
     annotations:
     - tag: source
       value: caDSR
@@ -2163,16 +1953,14 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3226281&version=1.0
+    - tag: term
+      value: International Classification of Diseases for Oncology, Third Edition
+        ICD-O-3 Site Code
   size_selection_range:
-    description: 'Range of size selection.
-
-      '
+    description: 'Range of size selection.'
   smoking_history:
     description: 'Category describing current smoking status and smoking history as
-      self-reported by a patient.
-
-      '
-    name: Smoking History
+      self-reported by a patient.'
     annotations:
     - tag: source
       value: caDSR
@@ -2182,12 +1970,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2181650&version=1.0
+    - tag: term
+      value: Smoking History
   smoking_intensity:
     description: 'Numeric computed value to represent lifetime tobacco exposure defined
-      as number of cigarettes smoked per day x number of years smoked divided by 20
-
-      '
-    name: Person Cigarette Smoking History Pack Year Value
+      as number of cigarettes smoked per day x number of years smoked divided by 20'
     annotations:
     - tag: source
       value: caDSR
@@ -2197,16 +1984,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2955385&version=1.0
+    - tag: term
+      value: Person Cigarette Smoking History Pack Year Value
   source_center:
-    description: 'Name of the center that provided the item.
-
-      '
+    description: 'Name of the center that provided the item.'
   spectrophotometer_method:
     description: 'Name of the method used to determine the concentration of purified
-      nucleic acid within a solution.
-
-      '
-    name: Purification Nucleic Acid Solution Concentration Determination Method Type
+      nucleic acid within a solution.'
     annotations:
     - tag: source
       value: caDSR
@@ -2216,44 +2000,28 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3008378&version=1.0
+    - tag: term
+      value: Purification Nucleic Acid Solution Concentration Determination Method
+        Type
   spike_ins_fasta:
-    description: 'Name of the FASTA file that contains the spike-in sequences.
-
-      '
+    description: 'Name of the FASTA file that contains the spike-in sequences.'
   spike_ins_concentration:
-    description: 'Spike in concentration.
-
-      '
+    description: 'Spike in concentration.'
   state:
-    description: 'The current state of the object.
-
-      '
+    description: 'The current state of the object.'
   target_capture_kit_name:
-    description: 'Name of Target Capture Kit.
-
-      '
+    description: 'Name of Target Capture Kit.'
   target_capture_kit_vendor:
-    description: 'Vendor of Target Capture Kit.
-
-      '
+    description: 'Vendor of Target Capture Kit.'
   target_capture_kit_catalog_number:
-    description: 'Catalog of Target Capture Kit.
-
-      '
+    description: 'Catalog of Target Capture Kit.'
   target_capture_kit_version:
-    description: 'Version of Target Capture Kit.
-
-      '
+    description: 'Version of Target Capture Kit.'
   target_capture_kit_target_region:
-    description: 'Target Capture Kit BED file.
-
-      '
+    description: 'Target Capture Kit BED file.'
   therapeutic_agents:
     description: 'Text identification of the individual agent(s) used as part of a
-      prior treatment regimen.
-
-      '
-    name: Prior Therapy Regimen Text
+      prior treatment regimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -2263,12 +2031,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2975232&version=1.0
+    - tag: term
+      value: Prior Therapy Regimen Text
   time_between_clamping_and_freezing:
     description: 'Numeric representation of the elapsed time between the surgical
-      clamping of blood supply and freezing of the sample, measured in minutes.
-
-      '
-    name: Tissue Sample Clamping and Freezing Elapsed Minute Time
+      clamping of blood supply and freezing of the sample, measured in minutes.'
     annotations:
     - tag: source
       value: caDSR
@@ -2278,12 +2045,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432611&version=1.0
+    - tag: term
+      value: Tissue Sample Clamping and Freezing Elapsed Minute Time
   time_between_excision_and_freezing:
     description: 'Numeric representation of the elapsed time between the excision
-      and freezing of the sample, measured in minutes.
-
-      '
-    name: Tissue Sample Excision and Freezing Elapsed Minute Time
+      and freezing of the sample, measured in minutes.'
     annotations:
     - tag: source
       value: caDSR
@@ -2293,11 +2059,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432612&version=1.0
+    - tag: term
+      value: Tissue Sample Excision and Freezing Elapsed Minute Time
   tissue_or_organ_of_origin:
-    description: 'Text term that describes the anatomic site of the tumor or disease.
-
-      '
-    name: Tumor Disease Anatomic Site
+    description: 'Text term that describes the anatomic site of the tumor or disease.'
     annotations:
     - tag: source
       value: caDSR
@@ -2307,12 +2072,11 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3427536&version=3.0
+    - tag: term
+      value: Tumor Disease Anatomic Site
   tissue_type:
     description: 'Text term that represents a description of the kind of tissue collected
-      with respect to disease status or proximity to tumor tissue.
-
-      '
-    name: Tissue Sample Description Type
+      with respect to disease status or proximity to tumor tissue.'
     annotations:
     - tag: source
       value: caDSR
@@ -2322,15 +2086,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432687&version=1.0
+    - tag: term
+      value: Tissue Sample Description Type
   to_trim_adapter_sequence:
-    description: 'Does the user suggest adapter trimming?
-
-      '
+    description: 'Does the user suggest adapter trimming?'
   tobacco_smoking_onset_year:
-    description: 'The year in which the participant began smoking.
-
-      '
-    name: Started Smoking Year
+    description: 'The year in which the participant began smoking.'
     annotations:
     - tag: source
       value: caDSR
@@ -2340,11 +2101,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2228604&version=1.0
+    - tag: term
+      value: Started Smoking Year
   tobacco_smoking_quit_year:
-    description: 'The year in which the participant quit smoking.
-
-      '
-    name: Stopped Smoking Year
+    description: 'The year in which the participant quit smoking.'
     annotations:
     - tag: source
       value: caDSR
@@ -2354,12 +2114,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2228610&version=1.0
+    - tag: term
+      value: Stopped Smoking Year
   tobacco_smoking_status:
     description: 'Category describing current smoking status and smoking history as
-      self-reported by a patient.
-
-      '
-    name: Patient Smoking History Category
+      self-reported by a patient.'
     annotations:
     - tag: source
       value: caDSR
@@ -2369,11 +2128,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2181650&version=1.0
+    - tag: term
+      value: Patient Smoking History Category
   total_sequences:
-    description: 'A count of the total number of sequences processed.
-
-      '
-    name: Total Sequences
+    description: 'A count of the total number of sequences processed.'
     annotations:
     - tag: source
       value: FastQC
@@ -2383,12 +2141,11 @@ slots:
       value: null
     - tag: term_url
       value: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/1%20Basic%20Statistics.html
+    - tag: term
+      value: Total Sequences
   treatment_anatomic_site:
     description: 'The anatomic site or field targeted by a treatment regimen or single
-      agent therapy.
-
-      '
-    name: Treatment Anatomic Site
+      agent therapy.'
     annotations:
     - tag: source
       value: null
@@ -2398,12 +2155,11 @@ slots:
       value: null
     - tag: term_url
       value: null
+    - tag: term
+      value: Treatment Anatomic Site
   treatment_intent_type:
     description: 'Text term to identify the reason for the administration of a treatment
-      regimen. [Manually-curated]
-
-      '
-    name: Treatment Regimen Intent Type
+      regimen. [Manually-curated]'
     annotations:
     - tag: source
       value: caDSR
@@ -2413,13 +2169,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2793511&version=1.0
+    - tag: term
+      value: Treatment Regimen Intent Type
   treatment_or_therapy:
     description: 'A yes/no/unknown/not applicable indicator related to the administration
-      of therapeutic agents received before the body specimen was collected.
-
-      '
-    name: Therapeutic Procedure Prior Specimen Collection Administered Yes No Unknown
-      Not Applicable Indicator
+      of therapeutic agents received before the body specimen was collected.'
     annotations:
     - tag: source
       value: caDSR
@@ -2429,10 +2183,12 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=4231463&version=1.0
+    - tag: term
+      value: Therapeutic Procedure Prior Specimen Collection Administered Yes No Unknown
+        Not Applicable Indicator
   treatment_outcome:
     description: "Text term that describes the patient\xBFs final outcome after the\
       \ treatment was administered.\n"
-    name: Treatment Outcome Type
     annotations:
     - tag: source
       value: caDSR
@@ -2442,11 +2198,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5102383&version=1.0
+    - tag: term
+      value: Treatment Outcome Type
   treatment_type:
-    description: 'Text term that describes the kind of treatment administered.
-
-      '
-    name: Treatment Method Type
+    description: 'Text term that describes the kind of treatment administered.'
     annotations:
     - tag: source
       value: caDSR
@@ -2456,12 +2211,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5102381&version=1.0
+    - tag: term
+      value: Treatment Method Type
   tumor_grade:
     description: 'Numeric value to express the degree of abnormality of cancer cells,
-      a measure of differentiation and aggressiveness.
-
-      '
-    name: Neoplasm Histologic Grade
+      a measure of differentiation and aggressiveness.'
     annotations:
     - tag: source
       value: caDSR
@@ -2471,20 +2225,15 @@ slots:
       value: '2'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2785839&version=2.0
+    - tag: term
+      value: Neoplasm Histologic Grade
   tumor_code:
-    description: 'Diagnostic tumor code of the tissue sample source.
-
-      '
+    description: 'Diagnostic tumor code of the tissue sample source.'
   tumor_code_id:
-    description: 'BCR-defined id code for the tumor sample.
-
-      '
+    description: 'BCR-defined id code for the tumor sample.'
   tumor_descriptor:
     description: 'Text that describes the kind of disease present in the tumor specimen
-      as related to a specific timepoint.
-
-      '
-    name: Tumor Tissue Disease Description Type
+      as related to a specific timepoint.'
     annotations:
     - tag: source
       value: caDSR
@@ -2494,15 +2243,14 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3288124&version=1.0
+    - tag: term
+      value: Tumor Tissue Disease Description Type
   tumor_stage:
     description: 'The extent of a cancer in the body. Staging is usually based on
       the size of the tumor, whether lymph nodes contain cancer, and whether the cancer
       has spread from the original site to other parts of the body. The accepted values
       for tumor_stage depend on the tumor site, type, and accepted staging system.
-      These items should accompany the tumor_stage value as associated metadata.
-
-      '
-    name: Tumor Stage
+      These items should accompany the tumor_stage value as associated metadata.'
     annotations:
     - tag: source
       value: NCIt
@@ -2512,15 +2260,14 @@ slots:
       value: null
     - tag: term_url
       value: https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI%20Thesaurus&code=C16899
+    - tag: term
+      value: Tumor Stage
   UUID:
     description: 'A 128-bit identifier. Depending on the mechanism used to generate
       it, it is either guaranteed to be different from all other UUIDs/GUIDs generated
       until 3400 AD or extremely likely to be different. Its relatively small size
       lends itself well to sorting, ordering, and hashing of all sorts, storing in
-      databases, simple allocation, and ease of programming in general.
-
-      '
-    name: Universally Unique Identifier
+      databases, simple allocation, and ease of programming in general.'
     annotations:
     - tag: source
       value: NCIt
@@ -2530,12 +2277,11 @@ slots:
       value: null
     - tag: term_url
       value: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+    - tag: term
+      value: Universally Unique Identifier
   vascular_invasion_present:
     description: 'The yes/no indicator to ask if large vessel or venous invasion was
-      detected by surgery or presence in a tumor specimen.
-
-      '
-    name: Tumor Vascular Invasion Ind-3
+      detected by surgery or presence in a tumor specimen.'
     annotations:
     - tag: source
       value: caDSR
@@ -2545,11 +2291,10 @@ slots:
       value: '3'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=64358&version=3.0
+    - tag: term
+      value: Tumor Vascular Invasion Ind-3
   vital_status:
-    description: 'The survival state of the person registered on the protocol.
-
-      '
-    name: Patient Vital Status
+    description: 'The survival state of the person registered on the protocol.'
     annotations:
     - tag: source
       value: caDSR
@@ -2559,11 +2304,10 @@ slots:
       value: '5'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5&version=5.0
+    - tag: term
+      value: Patient Vital Status
   weight:
-    description: 'The weight of the patient measured in lbs (HARMONIZED).
-
-      '
-    name: Patient Weight Measurement
+    description: 'The weight of the patient measured in lbs (HARMONIZED).'
     annotations:
     - tag: source
       value: caDSR
@@ -2573,12 +2317,11 @@ slots:
       value: '4'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=651&version=4.0
+    - tag: term
+      value: Patient Weight Measurement
   well_number:
     description: 'Numeric value that represents the the well location within a plate
-      for the analyte or aliquot from the sample.
-
-      '
-    name: Biospecimen Analyte or Aliquot Plate Well Number
+      for the analyte or aliquot from the sample.'
     annotations:
     - tag: source
       value: caDSR
@@ -2588,16 +2331,13 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=5432613&version=1.0
+    - tag: term
+      value: Biospecimen Analyte or Aliquot Plate Well Number
   workflow_type:
-    description: 'Generic name for the workflow used to analyze a data set.
-
-      '
+    description: 'Generic name for the workflow used to analyze a data set.'
   year_of_birth:
     description: 'Numeric value to represent the calendar year in which an individual
-      was born.
-
-      '
-    name: Year Birth Date Number
+      was born.'
     annotations:
     - tag: source
       value: caDSR
@@ -2607,12 +2347,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2896954&version=1.0
+    - tag: term
+      value: Year Birth Date Number
   year_of_diagnosis:
     description: 'Numeric value to represent the year of an individual''s initial
-      pathologic diagnosis of cancer.
-
-      '
-    name: Year of initial pathologic diagnosis
+      pathologic diagnosis of cancer.'
     annotations:
     - tag: source
       value: caDSR
@@ -2622,11 +2361,10 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2896960&version=1.0
+    - tag: term
+      value: Year of initial pathologic diagnosis
   year_of_death:
-    description: 'Numeric value to represent the year of the death of an individual.
-
-      '
-    name: Year Death Number
+    description: 'Numeric value to represent the year of the death of an individual.'
     annotations:
     - tag: source
       value: caDSR
@@ -2636,12 +2374,11 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=2897030&version=1.0
+    - tag: term
+      value: Year Death Number
   years_smoked_gt89:
     description: 'Indicate whether the numeric value to represent the number of years
-      a person has been smoking (HARMONIZED) is greater than 89 years.
-
-      '
-    name: Person Smoking Duration Year Count
+      a person has been smoking (HARMONIZED) is greater than 89 years.'
     annotations:
     - tag: source
       value: caDSR
@@ -2651,6 +2388,8 @@ slots:
       value: '1'
     - tag: term_url
       value: https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3137957&version=1.0
+    - tag: term
+      value: Person Smoking Duration Year Count
   consent_codes:
     description: 'Data Use Restrictions that are used to indicate  permissions/restrictions
       for datasets and/or materials, and relates to the purposes for which datasets

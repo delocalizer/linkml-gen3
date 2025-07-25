@@ -7,8 +7,8 @@ prefixes:
   example: https://example.org/
 default_prefix: example
 imports:
-- terms_slots.yaml
-- shared_definitions.yaml
+- terms_slots
+- shared_definitions
 - linkml:types
 default_range: string
 slots:
