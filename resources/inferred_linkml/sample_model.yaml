@@ -1,0 +1,86 @@
+id: https://example.org/sample_model
+name: SampleModel
+description: LinkML schema for the Gen3 Sample node
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://example.org/
+default_prefix: example
+imports:
+- terms_slots.yaml
+- shared_definitions.yaml
+- linkml:types
+default_range: string
+slots:
+  subjects:
+    name: subjects
+    description: taken_from
+    range: subject
+    required: true
+    multivalued: true
+  freeze_thaw_cycles:
+    name: freeze_thaw_cycles
+    range: integer
+    description: Number of freeze thaw cycles conducted on the sample
+  sample_collection_method:
+    name: sample_collection_method
+    range: string
+    description: How the sample was collected, e.g. blood draw
+  sample_id:
+    name: sample_id
+    range: string
+    description: A unique sample identifier
+  sample_in_preservation:
+    name: sample_in_preservation
+    range: string
+    description: The preservation method used for the sample
+  sample_in_storage:
+    name: sample_in_storage
+    range: string
+    description: Whether there is a sample in storage
+  sample_provider:
+    name: sample_provider
+    range: string
+    description: The name of collaborating institute that provided the sample
+  sample_source:
+    name: sample_source
+    range: string
+    description: Uberon identifier, anatomical location as described by the Uber Anatomy
+      Ontology (UBERON). (CMG, CCDG)
+  sample_storage_method:
+    name: sample_storage_method
+    range: string
+    description: How the sample was/is stored
+  sample_type:
+    name: sample_type
+    range: string
+    description: The type of sample, e.g. Whole Blood, Blood Cells, Frozen Blood
+  storage_location:
+    name: storage_location
+    range: string
+    description: Where the sample is stored
+classes:
+  sample:
+    description: Biospecimen information that links subjects to samples including
+      sample's provider and source.
+    mixins:
+    - UbiquitousProperties
+    slots:
+    - subjects
+    - freeze_thaw_cycles
+    - sample_collection_method
+    - sample_id
+    - sample_in_preservation
+    - sample_in_storage
+    - sample_provider
+    - sample_source
+    - sample_storage_method
+    - sample_type
+    - storage_location
+    - subjects
+    annotations:
+    - tag: category
+      value: biospecimen
+    - tag: submittable
+      value: 'true'
+    - tag: systemProperties
+      value: id,project_id,state,created_datetime,updated_datetime

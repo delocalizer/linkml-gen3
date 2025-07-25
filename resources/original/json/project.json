@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "category": "administrative",
+  "constraints": null,
+  "description": "The study the data is coming from",
+  "id": "project",
+  "links": [
+    {
+      "backref": "projects",
+      "label": "member_of",
+      "multiplicity": "many_to_one",
+      "name": "programs",
+      "required": true,
+      "target_type": "program"
+    }
+  ],
+  "namespace": "https://data.test.biocommons.org.au/",
+  "program": "*",
+  "project": "*",
+  "properties": {
+    "authz": {
+      "description": "The authz string (example, [\"/programs/Program.name/projects/Project.code\"] ).",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "availability_mechanism": {
+      "description": "Mechanism by which the project will be made avilable.",
+      "type": "string"
+    },
+    "availability_type": {
+      "description": "Is the project open or restricted?",
+      "enum": [
+        "Open",
+        "Restricted"
+      ]
+    },
+    "code": {
+      "description": "Unique identifier for the project.",
+      "type": "string"
+    },
+    "data_access_url": {
+      "description": "A URL link that takes you to a page that explains how to gain access to the project",
+      "type": "string"
+    },
+    "date_collected": {
+      "description": "The date or date range in which the project data was collected.",
+      "type": "string"
+    },
+    "dbgap_accession_number": {
+      "description": "The dbgap accession number provided for the project. (CMG)",
+      "type": "string"
+    },
+    "full_name": {
+      "description": "The full name for the project.",
+      "type": "string"
+    },
+    "id": {
+      "$ref": "_definitions.yaml#/UUID",
+      "description": "UUID for the project.",
+      "systemAlias": "node_id"
+    },
+    "intended_release_date": {
+      "description": "Tracks a Project's intended release date.",
+      "format": "date-time",
+      "type": "string"
+    },
+    "name": {
+      "description": "Display name/brief description for the project.",
+      "type": "string"
+    },
+    "programs": {
+      "$ref": "_definitions.yaml#/to_one",
+      "description": "Indicates that the Study is logically part of the indicated Study.\n"
+    },
+    "project_description": {
+      "description": "The description for the project.",
+      "type": "string"
+    },
+    "project_registration": {
+      "description": "External source from which the identifier included in study_id originates",
+      "type": "string"
+    },
+    "releasable": {
+      "default": false,
+      "description": "A project can only be released by the user when `releasable` is true.\n",
+      "type": "boolean"
+    },
+    "released": {
+      "default": false,
+      "description": "To release a project is to tell the GDC to include all submitted\nentities in the next GDC index.\n",
+      "type": "boolean"
+    },
+    "short_name": {
+      "description": "The shorthand name for the project.",
+      "type": "string"
+    },
+    "state": {
+      "default": "open",
+      "description": "The possible states a project can be in.  All but `open` are\nequivalent to some type of locked state.\n",
+      "enum": [
+        "open",
+        "review",
+        "submitted",
+        "processing",
+        "closed",
+        "legacy"
+      ]
+    },
+    "support_id": {
+      "description": "The ID of the source providing support/grant resources.",
+      "type": "string"
+    },
+    "support_source": {
+      "description": "The name of source providing support/grant resources.",
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "name",
+    "programs",
+    "dbgap_accession_number"
+  ],
+  "submittable": true,
+  "systemProperties": [
+    "id",
+    "state",
+    "released",
+    "releasable",
+    "intended_release_date"
+  ],
+  "title": "Project",
+  "type": "object",
+  "uniqueKeys": [
+    [
+      "id"
+    ],
+    [
+      "code"
+    ]
+  ],
+  "validators": null
+}

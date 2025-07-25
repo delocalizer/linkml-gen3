@@ -1,0 +1,26 @@
+id: https://example.org/schema_settings
+name: SchemaSettings
+description: LinkML schema to validate _settings.yaml content
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://example.org/
+default_prefix: example
+imports:
+- linkml:types
+default_range: string
+slots:
+  enable_case_cache:
+    range: boolean
+    description: Enable caching for case-insensitive property lookup
+  _dict_commit:
+    range: string
+    description: Git commit hash or tag for schema version
+  _dict_version:
+    range: string
+    description: Human-readable schema version
+classes:
+  SchemaSettings:
+    slots:
+    - enable_case_cache
+    - _dict_commit
+    - _dict_version

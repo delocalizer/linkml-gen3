@@ -1,0 +1,44 @@
+id: https://w3id.org/linkml/examples/program
+name: ProgramModel
+description: LinkML class reverse-engineered from Gen3 program node
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://example.org/
+default_prefix: example
+imports:
+- linkml:types
+default_range: string
+classes:
+  program:
+    description: 'A broad framework of goals to be achieved. (NCIt C52647)
+
+      '
+    slots:
+    - type
+    - id
+    - name
+    - dbgap_accession_number
+    annotations:
+    - tag: category
+      value: administrative
+    - tag: submittable
+      value: 'false'
+slots:
+  type:
+    name: type
+    description: ''
+    range: string
+  id:
+    name: id
+    description: ''
+    range: string
+  name:
+    name: name
+    description: Full name/title of the program.
+    range: string
+    required: true
+  dbgap_accession_number:
+    name: dbgap_accession_number
+    description: The dbgap accession number provided for the program.
+    range: string
+    required: true

@@ -1,0 +1,47 @@
+id: https://example.org/program_model
+name: ProgramModel
+description: LinkML schema for the Gen3 Program node, referencing shared slot names
+  directly
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://example.org/
+default_prefix: example
+imports:
+- terms_slots.yaml
+- shared_definitions.yaml
+- linkml:types
+default_range: string
+slots:
+  type:
+    name: type
+    range: string
+  id:
+    name: id
+    range: UUID
+  name:
+    name: name
+    range: string
+    description: Full name/title of the program.
+    required: true
+  dbgap_accession_number:
+    name: dbgap_accession_number
+    range: string
+    description: The dbgap accession number provided for the program.
+    required: true
+classes:
+  program:
+    description: 'A broad framework of goals to be achieved. (NCIt C52647)
+
+      '
+    slots:
+    - type
+    - id
+    - name
+    - dbgap_accession_number
+    annotations:
+    - tag: category
+      value: administrative
+    - tag: submittable
+      value: 'false'
+    - tag: systemProperties
+      value: id

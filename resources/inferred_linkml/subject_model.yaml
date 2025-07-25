@@ -1,0 +1,52 @@
+id: https://example.org/subject_model
+name: SubjectModel
+description: LinkML schema for the Gen3 Subject node
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://example.org/
+default_prefix: example
+imports:
+- terms_slots.yaml
+- shared_definitions.yaml
+- linkml:types
+default_range: string
+slots:
+  projects:
+    name: projects
+    description: part_of
+    range: project
+    required: true
+    multivalued: true
+  cohort_id:
+    name: cohort_id
+    range: string
+    description: Identifier for the cohort the subject is a part of
+  consent_codes:
+    name: consent_codes
+    range: array
+    description: 'Subject Consent | Data Use Restrictions that are used to indicate  permissions/restrictions
+      for datasets and/or materials, and relates to the purposes for which datasets
+      and/or material might be removed, stored or used. Based on the Data Use Ontology
+      : see http://www.obofoundry.org/ontology/duo.html'
+  patient_id:
+    name: patient_id
+    range: string
+    description: De-identified unique identifier for the patient/subject
+classes:
+  subject:
+    description: An individual participant in the study with baseline measurements.
+    slots:
+    - projects
+    - cohort_id
+    - consent_codes
+    - patient_id
+    - projects
+    annotations:
+    - tag: category
+      value: clinical
+    - tag: submittable
+      value: 'true'
+    - tag: systemProperties
+      value: id,project_id,state,created_datetime,updated_datetime
+    mixins:
+    - UbiquitousProperties

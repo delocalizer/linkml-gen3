@@ -1,0 +1,899 @@
+{
+  "program": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "category": "administrative",
+    "description": "A broad framework of goals to be achieved. (NCIt C52647)\n",
+    "id": "program",
+    "links": [],
+    "program": "*",
+    "project": "*",
+    "properties": {
+      "dbgap_accession_number": {
+        "description": "The dbgap accession number provided for the program.",
+        "type": "string"
+      },
+      "id": {
+        "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+        "systemAlias": "node_id",
+        "term": {
+          "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+          "termDef": {
+            "cde_id": "C54100",
+            "cde_version": null,
+            "source": "NCIt",
+            "term": "Universally Unique Identifier",
+            "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+          }
+        },
+        "type": "string"
+      },
+      "name": {
+        "description": "Full name/title of the program.",
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "name",
+      "dbgap_accession_number"
+    ],
+    "submittable": false,
+    "systemProperties": [
+      "id"
+    ],
+    "title": "Program",
+    "type": "object",
+    "uniqueKeys": [
+      [
+        "id"
+      ],
+      [
+        "name"
+      ]
+    ],
+    "validators": null
+  },
+  "project": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "category": "administrative",
+    "constraints": null,
+    "description": "The study the data is coming from",
+    "id": "project",
+    "links": [
+      {
+        "backref": "projects",
+        "label": "member_of",
+        "multiplicity": "many_to_one",
+        "name": "programs",
+        "required": true,
+        "target_type": "program"
+      }
+    ],
+    "namespace": "https://data.test.biocommons.org.au/",
+    "program": "*",
+    "project": "*",
+    "properties": {
+      "authz": {
+        "description": "The authz string (example, [\"/programs/Program.name/projects/Project.code\"] ).",
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "availability_mechanism": {
+        "description": "Mechanism by which the project will be made avilable.",
+        "type": "string"
+      },
+      "availability_type": {
+        "description": "Is the project open or restricted?",
+        "enum": [
+          "Open",
+          "Restricted"
+        ]
+      },
+      "code": {
+        "description": "Unique identifier for the project.",
+        "type": "string"
+      },
+      "data_access_url": {
+        "description": "A URL link that takes you to a page that explains how to gain access to the project",
+        "type": "string"
+      },
+      "date_collected": {
+        "description": "The date or date range in which the project data was collected.",
+        "type": "string"
+      },
+      "dbgap_accession_number": {
+        "description": "The dbgap accession number provided for the project. (CMG)",
+        "type": "string"
+      },
+      "full_name": {
+        "description": "The full name for the project.",
+        "type": "string"
+      },
+      "id": {
+        "description": "UUID for the project.",
+        "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+        "systemAlias": "node_id",
+        "term": {
+          "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+          "termDef": {
+            "cde_id": "C54100",
+            "cde_version": null,
+            "source": "NCIt",
+            "term": "Universally Unique Identifier",
+            "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+          }
+        },
+        "type": "string"
+      },
+      "intended_release_date": {
+        "description": "Tracks a Project's intended release date.",
+        "format": "date-time",
+        "type": "string"
+      },
+      "name": {
+        "description": "Display name/brief description for the project.",
+        "type": "string"
+      },
+      "programs": {
+        "anyOf": [
+          {
+            "items": {
+              "additionalProperties": true,
+              "maxItems": 1,
+              "minItems": 1,
+              "properties": {
+                "id": {
+                  "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+                  "term": {
+                    "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+                    "termDef": {
+                      "cde_id": "C54100",
+                      "cde_version": null,
+                      "source": "NCIt",
+                      "term": "Universally Unique Identifier",
+                      "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+                    }
+                  },
+                  "type": "string"
+                },
+                "submitter_id": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          {
+            "additionalProperties": true,
+            "properties": {
+              "id": {
+                "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+                "term": {
+                  "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+                  "termDef": {
+                    "cde_id": "C54100",
+                    "cde_version": null,
+                    "source": "NCIt",
+                    "term": "Universally Unique Identifier",
+                    "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+                  }
+                },
+                "type": "string"
+              },
+              "submitter_id": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        ],
+        "description": "Indicates that the Study is logically part of the indicated Study.\n"
+      },
+      "project_description": {
+        "description": "The description for the project.",
+        "type": "string"
+      },
+      "project_registration": {
+        "description": "External source from which the identifier included in study_id originates",
+        "type": "string"
+      },
+      "releasable": {
+        "default": false,
+        "description": "A project can only be released by the user when `releasable` is true.\n",
+        "type": "boolean"
+      },
+      "released": {
+        "default": false,
+        "description": "To release a project is to tell the GDC to include all submitted\nentities in the next GDC index.\n",
+        "type": "boolean"
+      },
+      "short_name": {
+        "description": "The shorthand name for the project.",
+        "type": "string"
+      },
+      "state": {
+        "default": "open",
+        "description": "The possible states a project can be in.  All but `open` are\nequivalent to some type of locked state.\n",
+        "enum": [
+          "open",
+          "review",
+          "submitted",
+          "processing",
+          "closed",
+          "legacy"
+        ]
+      },
+      "support_id": {
+        "description": "The ID of the source providing support/grant resources.",
+        "type": "string"
+      },
+      "support_source": {
+        "description": "The name of source providing support/grant resources.",
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "code",
+      "name",
+      "programs",
+      "dbgap_accession_number"
+    ],
+    "submittable": true,
+    "systemProperties": [
+      "id",
+      "state",
+      "released",
+      "releasable",
+      "intended_release_date"
+    ],
+    "title": "Project",
+    "type": "object",
+    "uniqueKeys": [
+      [
+        "id"
+      ],
+      [
+        "code"
+      ]
+    ],
+    "validators": null
+  },
+  "sample": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "category": "biospecimen",
+    "description": "Biospecimen information that links subjects to samples including sample's provider and source.",
+    "id": "sample",
+    "links": [
+      {
+        "backref": "samples",
+        "label": "taken_from",
+        "multiplicity": "many_to_one",
+        "name": "subjects",
+        "required": true,
+        "target_type": "subject"
+      }
+    ],
+    "namespace": "https://data.test.biocommons.org.au/",
+    "program": "*",
+    "project": "*",
+    "properties": {
+      "created_datetime": {
+        "oneOf": [
+          {
+            "format": "date-time",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "term": {
+          "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+        }
+      },
+      "freeze_thaw_cycles": {
+        "description": "Number of freeze thaw cycles conducted on the sample",
+        "type": "integer"
+      },
+      "id": {
+        "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+        "systemAlias": "node_id",
+        "term": {
+          "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+          "termDef": {
+            "cde_id": "C54100",
+            "cde_version": null,
+            "source": "NCIt",
+            "term": "Universally Unique Identifier",
+            "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+          }
+        },
+        "type": "string"
+      },
+      "project_id": {
+        "term": {
+          "description": "Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.\n"
+        },
+        "type": "string"
+      },
+      "sample_collection_method": {
+        "description": "How the sample was collected, e.g. blood draw",
+        "type": "string"
+      },
+      "sample_id": {
+        "description": "A unique sample identifier",
+        "type": "string"
+      },
+      "sample_in_preservation": {
+        "description": "The preservation method used for the sample",
+        "enum": [
+          "cryopreserved",
+          "FFPE",
+          "fresh",
+          "OCT",
+          "snap Frozen",
+          "frozen",
+          "unknown",
+          "not reported",
+          "not allowed to collect"
+        ],
+        "enumDef": [
+          {
+            "enumeration": "cryopreserved",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "FFPE",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "fresh",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "OCT",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "snap Frozen",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "frozen",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "unknown",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "not reported",
+            "source": "BioData Catalyst DD"
+          },
+          {
+            "enumeration": "not allowed to collect",
+            "source": "BioData Catalyst DD"
+          }
+        ]
+      },
+      "sample_in_storage": {
+        "description": "Whether there is a sample in storage",
+        "enum": [
+          true,
+          false,
+          "unknown"
+        ]
+      },
+      "sample_provider": {
+        "description": "The name of collaborating institute that provided the sample",
+        "enum": [
+          "Baker",
+          "USYD",
+          "UMELB",
+          "UQ"
+        ]
+      },
+      "sample_source": {
+        "description": "Uberon identifier, anatomical location as described by the Uber Anatomy Ontology (UBERON). (CMG, CCDG)",
+        "pattern": "^UBERON:[0-9]{7}$",
+        "type": "string"
+      },
+      "sample_storage_method": {
+        "description": "How the sample was/is stored",
+        "enum": [
+          "not stored",
+          "ambient temperature",
+          "cut slide",
+          "fresh",
+          "frozen, -80C freezer",
+          "frozen, -150C freezer",
+          "frozen, liquid nitrogen",
+          "frozen, vapor phase",
+          "paraffin block",
+          "RNAlater, frozen",
+          "TRIzol, frozen"
+        ],
+        "enumDef": [
+          {
+            "enumeration": "ambient temperature",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "cut slide",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "fresh",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "frozen, -80C freezer",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "frozen, -150C freezer",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "frozen, liquid nitrogen",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "frozen, vapor phase",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "paraffin block",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "RNAlater, frozen",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          },
+          {
+            "enumeration": "TRIzol, frozen",
+            "source": "https://schema.humancellatlas.org/module/biomaterial/6.1.1/preservation_storage",
+            "version": "6.1.1"
+          }
+        ]
+      },
+      "sample_type": {
+        "description": "The type of sample, e.g. Whole Blood, Blood Cells, Frozen Blood",
+        "type": "string"
+      },
+      "state": {
+        "default": "validated",
+        "downloadable": [
+          "uploaded",
+          "md5summed",
+          "validating",
+          "validated",
+          "error",
+          "invalid",
+          "released"
+        ],
+        "oneOf": [
+          {
+            "enum": [
+              "uploading",
+              "uploaded",
+              "md5summing",
+              "md5summed",
+              "validating",
+              "error",
+              "invalid",
+              "suppressed",
+              "redacted",
+              "live"
+            ]
+          },
+          {
+            "enum": [
+              "validated",
+              "submitted",
+              "released"
+            ]
+          }
+        ],
+        "public": [
+          "live"
+        ],
+        "term": {
+          "description": "The current state of the object.\n"
+        }
+      },
+      "storage_location": {
+        "description": "Where the sample is stored",
+        "enum": [
+          "Baker",
+          "USYD",
+          "UMELB",
+          "UQ"
+        ]
+      },
+      "subjects": {
+        "anyOf": [
+          {
+            "items": {
+              "additionalProperties": true,
+              "maxItems": 1,
+              "minItems": 1,
+              "properties": {
+                "id": {
+                  "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+                  "term": {
+                    "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+                    "termDef": {
+                      "cde_id": "C54100",
+                      "cde_version": null,
+                      "source": "NCIt",
+                      "term": "Universally Unique Identifier",
+                      "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+                    }
+                  },
+                  "type": "string"
+                },
+                "submitter_id": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          {
+            "additionalProperties": true,
+            "properties": {
+              "id": {
+                "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+                "term": {
+                  "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+                  "termDef": {
+                    "cde_id": "C54100",
+                    "cde_version": null,
+                    "source": "NCIt",
+                    "term": "Universally Unique Identifier",
+                    "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+                  }
+                },
+                "type": "string"
+              },
+              "submitter_id": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        ]
+      },
+      "submitter_id": {
+        "description": "A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.\n",
+        "type": [
+          "string"
+        ]
+      },
+      "type": {
+        "type": "string"
+      },
+      "updated_datetime": {
+        "oneOf": [
+          {
+            "format": "date-time",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "term": {
+          "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+        }
+      }
+    },
+    "required": [
+      "type",
+      "submitter_id",
+      "subjects"
+    ],
+    "submittable": true,
+    "systemProperties": [
+      "id",
+      "project_id",
+      "state",
+      "created_datetime",
+      "updated_datetime"
+    ],
+    "title": "Sample",
+    "type": "object",
+    "uniqueKeys": [
+      [
+        "id"
+      ],
+      [
+        "project_id",
+        "submitter_id"
+      ]
+    ],
+    "validators": null
+  },
+  "subject": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "category": "clinical",
+    "description": "An individual participant in the study with baseline measurements.",
+    "id": "subject",
+    "links": [
+      {
+        "backref": "subjects",
+        "label": "part_of",
+        "multiplicity": "many_to_one",
+        "name": "projects",
+        "required": true,
+        "target_type": "project"
+      }
+    ],
+    "namespace": "https://data.test.biocommons.org.au/",
+    "program": "*",
+    "project": "*",
+    "properties": {
+      "cohort_id": {
+        "description": "Identifier for the cohort the subject is a part of",
+        "type": "string"
+      },
+      "consent_codes": {
+        "description": "Subject Consent | Data Use Restrictions that are used to indicate  permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used. Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.html",
+        "items": {
+          "enum": [
+            "General Research Use",
+            "Health or Biomedical Research",
+            "Disease Specific Research",
+            "not for profit, non commercial user only",
+            "ethics approval required",
+            "user specific restriction"
+          ],
+          "enumDef": [
+            {
+              "enumeration": "General Research Use",
+              "source": "duo",
+              "term_id": "DUO:0000042"
+            },
+            {
+              "enumeration": "Health or Biomedical Research",
+              "source": "duo",
+              "term_id": "DUO:0000006"
+            },
+            {
+              "enumeration": "Disease Specific Research",
+              "source": "duo",
+              "term_id": "DUO:0000007"
+            },
+            {
+              "enumeration": "not for profit, non commercial user only",
+              "source": "duo",
+              "term_id": "DUO:0000018"
+            },
+            {
+              "enumeration": "ethics approval required",
+              "source": "duo",
+              "term_id": "DUO:0000021"
+            },
+            {
+              "enumeration": "user specific restriction",
+              "source": "duo",
+              "term_id": "DUO:0000026"
+            }
+          ]
+        },
+        "termDef": [
+          {
+            "term": "consent_codes"
+          }
+        ],
+        "type": "array"
+      },
+      "created_datetime": {
+        "oneOf": [
+          {
+            "format": "date-time",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "term": {
+          "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+        }
+      },
+      "id": {
+        "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+        "systemAlias": "node_id",
+        "term": {
+          "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+          "termDef": {
+            "cde_id": "C54100",
+            "cde_version": null,
+            "source": "NCIt",
+            "term": "Universally Unique Identifier",
+            "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+          }
+        },
+        "type": "string"
+      },
+      "patient_id": {
+        "description": "De-identified unique identifier for the patient/subject",
+        "type": "string"
+      },
+      "project_id": {
+        "term": {
+          "description": "Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.\n"
+        },
+        "type": "string"
+      },
+      "projects": {
+        "anyOf": [
+          {
+            "items": {
+              "additionalProperties": true,
+              "maxItems": 1,
+              "minItems": 1,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "id": {
+                  "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+                  "term": {
+                    "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+                    "termDef": {
+                      "cde_id": "C54100",
+                      "cde_version": null,
+                      "source": "NCIt",
+                      "term": "Universally Unique Identifier",
+                      "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+                    }
+                  },
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          {
+            "additionalProperties": true,
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "id": {
+                "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+                "term": {
+                  "description": "A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.\n",
+                  "termDef": {
+                    "cde_id": "C54100",
+                    "cde_version": null,
+                    "source": "NCIt",
+                    "term": "Universally Unique Identifier",
+                    "term_url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+                  }
+                },
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        ]
+      },
+      "state": {
+        "default": "validated",
+        "downloadable": [
+          "uploaded",
+          "md5summed",
+          "validating",
+          "validated",
+          "error",
+          "invalid",
+          "released"
+        ],
+        "oneOf": [
+          {
+            "enum": [
+              "uploading",
+              "uploaded",
+              "md5summing",
+              "md5summed",
+              "validating",
+              "error",
+              "invalid",
+              "suppressed",
+              "redacted",
+              "live"
+            ]
+          },
+          {
+            "enum": [
+              "validated",
+              "submitted",
+              "released"
+            ]
+          }
+        ],
+        "public": [
+          "live"
+        ],
+        "term": {
+          "description": "The current state of the object.\n"
+        }
+      },
+      "submitter_id": {
+        "description": "A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.\n",
+        "type": [
+          "string"
+        ]
+      },
+      "type": {
+        "type": "string"
+      },
+      "updated_datetime": {
+        "oneOf": [
+          {
+            "format": "date-time",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "term": {
+          "description": "A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]\n"
+        }
+      }
+    },
+    "required": [
+      "type",
+      "submitter_id",
+      "projects"
+    ],
+    "submittable": true,
+    "systemProperties": [
+      "id",
+      "project_id",
+      "state",
+      "created_datetime",
+      "updated_datetime"
+    ],
+    "title": "Subject",
+    "type": "object",
+    "uniqueKeys": [
+      [
+        "id"
+      ],
+      [
+        "project_id",
+        "submitter_id"
+      ]
+    ],
+    "validators": null
+  }
+}

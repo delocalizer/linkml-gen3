@@ -1,0 +1,150 @@
+id: https://example.org/project_model
+name: ProjectModel
+description: LinkML schema for the Gen3 Project node, referencing shared slots and
+  enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://example.org/
+default_prefix: example
+imports:
+- terms_slots.yaml
+- shared_definitions.yaml
+- linkml:types
+default_range: string
+slots:
+  type:
+    name: type
+    range: string
+  id:
+    name: id
+    range: UUID
+  name:
+    name: name
+    range: string
+    description: Display name/brief description for the project.
+    required: true
+  code:
+    name: code
+    range: string
+    description: Unique identifier for the project.
+    required: true
+  date_collected:
+    name: date_collected
+    range: string
+    description: The date or date range in which the project data was collected.
+  availability_type:
+    name: availability_type
+    range: string
+    description: Is the project open or restricted?
+  availability_mechanism:
+    name: availability_mechanism
+    range: string
+    description: Mechanism by which the project will be made avilable.
+  support_source:
+    name: support_source
+    range: string
+    description: The name of source providing support/grant resources.
+  support_id:
+    name: support_id
+    range: string
+    description: The ID of the source providing support/grant resources.
+  programs:
+    name: programs
+    description: member_of
+    range: program
+    required: true
+    multivalued: true
+  state:
+    name: state
+    range: string
+    description: 'The possible states a project can be in.  All but `open` are
+
+      equivalent to some type of locked state.
+
+      '
+  released:
+    name: released
+    range: boolean
+    description: 'To release a project is to tell the GDC to include all submitted
+
+      entities in the next GDC index.
+
+      '
+  releasable:
+    name: releasable
+    range: boolean
+    description: 'A project can only be released by the user when `releasable` is
+      true.
+
+      '
+  intended_release_date:
+    name: intended_release_date
+    range: datetime
+    description: Tracks a Project's intended release date.
+    annotations:
+    - tag: gen3_format
+      value: date-time
+  dbgap_accession_number:
+    name: dbgap_accession_number
+    range: string
+    description: The dbgap accession number provided for the project. (CMG)
+    required: true
+  authz:
+    name: authz
+    range: array
+    description: The authz string (example, ["/programs/Program.name/projects/Project.code"]
+      ).
+  short_name:
+    name: short_name
+    range: string
+    description: The shorthand name for the project.
+  full_name:
+    name: full_name
+    range: string
+    description: The full name for the project.
+  project_description:
+    name: project_description
+    range: string
+    description: The description for the project.
+  project_registration:
+    name: project_registration
+    range: string
+    description: External source from which the identifier included in study_id originates
+  data_access_url:
+    name: data_access_url
+    range: string
+    description: A URL link that takes you to a page that explains how to gain access
+      to the project
+classes:
+  project:
+    description: The study the data is coming from
+    slots:
+    - type
+    - id
+    - name
+    - code
+    - date_collected
+    - availability_type
+    - availability_mechanism
+    - support_source
+    - support_id
+    - programs
+    - state
+    - released
+    - releasable
+    - intended_release_date
+    - dbgap_accession_number
+    - authz
+    - short_name
+    - full_name
+    - project_description
+    - project_registration
+    - data_access_url
+    - programs
+    annotations:
+    - tag: category
+      value: administrative
+    - tag: submittable
+      value: 'true'
+    - tag: systemProperties
+      value: id,state,released,releasable,intended_release_date

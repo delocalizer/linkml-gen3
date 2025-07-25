@@ -1,0 +1,203 @@
+id: https://example.org/shared_definitions
+name: SharedDefinitions
+description: Shared types, enums, and mixins converted from _definitions.yaml
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://example.org/
+default_prefix: example
+slots:
+  UUID:
+    range: string
+    pattern: ^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$
+  parent_uuids:
+    range: array
+  foreign_key_project:
+    range: object
+  to_one_project:
+    range: string
+    annotations:
+    - tag: anyOf
+      value: present
+    description: 'Complex definition, modeled as annotation: [''anyOf'']'
+  to_many_project:
+    range: string
+    annotations:
+    - tag: anyOf
+      value: present
+    description: 'Complex definition, modeled as annotation: [''anyOf'']'
+  foreign_key:
+    range: object
+  to_one:
+    range: string
+    annotations:
+    - tag: anyOf
+      value: present
+    description: 'Complex definition, modeled as annotation: [''anyOf'']'
+  to_many:
+    range: string
+    annotations:
+    - tag: anyOf
+      value: present
+    description: 'Complex definition, modeled as annotation: [''anyOf'']'
+  datetime:
+    range: string
+    annotations:
+    - tag: oneOf
+      value: present
+    - tag: term
+      value: present
+    description: 'Complex definition, modeled as annotation: [''oneOf'', ''term'']'
+  file_name:
+    range: string
+  file_size:
+    range: integer
+  file_format:
+    range: string
+  ga4gh_drs_uri:
+    range: string
+  md5sum:
+    range: string
+    pattern: ^[a-f0-9]{32}$
+  object_id:
+    range: string
+    description: The GUID of the object in the index service.
+  state:
+    name: state
+    range: state
+  project_id:
+    name: project_id
+    range: project_id
+  data_file_properties:
+    range: string
+    annotations:
+    - tag: $ref
+      value: present
+    - tag: file_name
+      value: present
+    - tag: file_size
+      value: present
+    - tag: file_format
+      value: present
+    - tag: md5sum
+      value: present
+    - tag: object_id
+      value: present
+    - tag: file_state
+      value: present
+    - tag: error_type
+      value: present
+    - tag: ga4gh_drs_uri
+      value: present
+    description: 'Complex definition, modeled as annotation: [''$ref'', ''file_name'',
+      ''file_size'', ''file_format'', ''md5sum'', ''object_id'', ''file_state'', ''error_type'',
+      ''ga4gh_drs_uri'']'
+  workflow_properties:
+    range: string
+    annotations:
+    - tag: $ref
+      value: present
+    - tag: workflow_link
+      value: present
+    - tag: workflow_version
+      value: present
+    - tag: workflow_start_datetime
+      value: present
+    - tag: workflow_end_datetime
+      value: present
+    description: 'Complex definition, modeled as annotation: [''$ref'', ''workflow_link'',
+      ''workflow_version'', ''workflow_start_datetime'', ''workflow_end_datetime'']'
+  date:
+    range: string
+    annotations:
+    - tag: oneOf
+      value: present
+    - tag: description
+      value: present
+    - tag: pattern
+      value: present
+    description: 'Complex definition, modeled as annotation: [''oneOf'', ''description'',
+      ''pattern'']'
+  year:
+    range: string
+    description: Year (YYYY)
+    pattern: ^\d{4}$
+  month:
+    range: string
+    description: month (MM)
+    pattern: ^\d{2}$
+  postcode:
+    range: string
+    description: Post code (DDDD)
+    pattern: ^\d{4}$
+  type:
+    name: type
+    range: string
+  id:
+    name: id
+    range: UUID
+  submitter_id:
+    name: submitter_id
+    range: string
+    description: 'A project-specific identifier for a node. This property is the calling
+      card/nickname/alias for a unit of submission. It can be used in place of the
+      UUID for identifying or recalling a node.
+
+      '
+  created_datetime:
+    name: created_datetime
+    range: datetime
+  updated_datetime:
+    name: updated_datetime
+    range: datetime
+enums:
+  release_state:
+    description: Release state of an entity.
+    permissible_values:
+      unreleased: {}
+      released: {}
+      redacted: {}
+  data_bundle_state:
+    description: State of a data bundle.
+    permissible_values:
+      submitted: {}
+      validated: {}
+      error: {}
+      released: {}
+      suppressed: {}
+      redacted: {}
+  data_file_error_type:
+    description: ''
+    permissible_values:
+      file_size: {}
+      file_format: {}
+      md5sum: {}
+  file_state:
+    description: ''
+    permissible_values:
+      registered: {}
+      uploading: {}
+      uploaded: {}
+      validating: {}
+      validated: {}
+      submitted: {}
+      processing: {}
+      processed: {}
+      released: {}
+      error: {}
+  qc_metrics_state:
+    description: ''
+    permissible_values:
+      FAIL: {}
+      PASS: {}
+      WARN: {}
+classes:
+  UbiquitousProperties:
+    mixin: true
+    slots:
+    - type
+    - id
+    - submitter_id
+    - state
+    - project_id
+    - created_datetime
+    - updated_datetime
