@@ -1,0 +1,31 @@
+## Usage and behavior of dictionaries in Gen3 
+
+### peregrine GraphQL query interface
+
+References:
+* https://github.com/uc-cdis/peregrine/blob/18aa211fcefdac205be5f685cb2a932c14f75888/peregrine/api.py#L13
+* https://github.com/uc-cdis/peregrine/blob/18aa211fcefdac205be5f685cb2a932c14f75888/peregrine/api.py#L91
+
+What's it doing?
+
+Loading a dictionary with dictionaryutils.DataDictionary, by URL, path, or
+defaulting to gdcdictionary.
+
+### DataDictionary intialisation
+
+Load by `url` or `local_file`:
+If these documents don't contain self-references with "_definitions" (e.g. the
+schema is already fully resolved) then the initialisation fails because there
+are hard-coded paths to search for terms & definitions:
+* https://github.com/uc-cdis/dictionaryutils/blob/246861c5e651009fd21599e8890618523ec529c9/dictionaryutils/__init__.py#L130
+
+### dictionary module initialisation
+
+If the dictionary doesn't contain self-references with `_definitions.yaml` then this
+fails because dictionaryutils.dictionary module initialization calls
+`add_default_schema` which tries to load `data_release.yaml` that references
+```
+    $ref: "_definitions.yaml#/UUID"
+```
+* https://github.com/uc-cdis/dictionaryutils/blob/246861c5e651009fd21599e8890618523ec529c9/dictionaryutils/__init__.py#L42
+
