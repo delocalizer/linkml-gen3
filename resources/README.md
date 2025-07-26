@@ -19,6 +19,11 @@ are the top level values.
 
 * `dictionaryutils` is used to load and resolve the YAML schema files to
   create resolved schema, then dump it to file in JSON format.
+* `resolved+_schema.json` was manually edited from `resolved_schema.json`
+  to include the necessary `_terms` and `_definitions` that support the
+  `data_release` schema that is inserted when initializing DataDictionary,
+  so that we have a minimal single-file definition of the schema that can
+  be used to initialize for example DataDictionary(url=...).
 
 ## `inferred_linkml`
 
