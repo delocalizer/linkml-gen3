@@ -1,3 +1,15 @@
+## `original/acdc-lite_bundled_schema.json`
+This is an extract from the ACDC project schema, containing only program,
+project, subject and sample nodes, plus terms and definitions. It is in the
+format `"<node>.yaml": { }` where the individual schema files are the top
+level values.
+
+## `original/cdis_bundled_schema.json`
+This is the example schema from the Gen3 project, obtainable from the URL
+https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json.
+It is also in the format `"<node>.yaml": { }` where the individual schema files
+are the top level values.
+
 ## `original/json`
 
 * These Gen3 node models are in JSON format but the name of the key in the
