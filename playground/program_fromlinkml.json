@@ -1,0 +1,47 @@
+{
+    "$defs": {
+        "Program": {
+            "additionalProperties": false,
+            "description": "A broad framework of goals to be achieved. (NCIt C52647)",
+            "properties": {
+                "dbgap_accession_number": {
+                    "description": "The dbgap accession number provided for the program.",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "A 128-bit identifier.",
+                    "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Full name/title of the program.",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "A classification or label for the program.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "dbgap_accession_number"
+            ],
+            "title": "Program",
+            "type": "object"
+        }
+    },
+    "$id": "https://example.org/schema/program",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": false,
+    "metamodel_version": "1.7.0",
+    "title": "Program",
+    "type": "object",
+    "version": null
+}

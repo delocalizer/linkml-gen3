@@ -1,0 +1,17 @@
+Simple workflow using gen-json-schema tool provided by LinkML:
+
+* program_linkml.yaml was what was suggested by ChatGPT as being the LinkML
+  equivalent of the original program.json
+* program_fromlinkml.json is output from:
+```
+gen-json-schema \
+	-i \
+	--closed \
+	program_linkml.yaml > program_fromlinkml.json
+```
+Note 1: the result contains everything embedded in `$defs`, which may need to
+be extracted and promoted, depending on what you want as the final output
+
+Note 2: uniqueKeys, links etc that are defined in the GDC metaschema but
+aren't part of regular JSON schema, are not emitted here. We'd need to write
+a custom handler for that.

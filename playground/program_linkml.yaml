@@ -1,0 +1,68 @@
+id: https://example.org/schema/program
+name: Program
+title: Program
+description: A broad framework of goals to be achieved. (NCIt C52647)
+default_prefix: ex
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ex: https://example.org/schema/
+
+imports:
+  - linkml:types
+
+types:
+  uuid:
+    typeof: string
+    pattern: '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+
+slots:
+  id:
+    description: A 128-bit identifier.
+    range: uuid
+    identifier: true
+    required: false
+    annotations:
+      systemAlias: node_id
+
+  name:
+    description: Full name/title of the program.
+    range: string
+    required: true
+
+  dbgap_accession_number:
+    description: The dbgap accession number provided for the program.
+    range: string
+    required: true
+
+  type:
+    description: A classification or label for the program.
+    range: string
+    required: false
+
+classes:
+  Program:
+    description: A broad framework of goals to be achieved. (NCIt C52647)
+    slots:
+      - id
+      - name
+      - dbgap_accession_number
+      - type
+    slot_usage:
+      id:
+        required: false
+        identifier: true
+      name:
+        required: true
+      dbgap_accession_number:
+        required: true
+    annotations:
+      category: administrative
+      program: '"*"'         # literal string
+      project: '"*"'
+      submittable: false
+      systemProperties: '["id"]'
+      validators: null
+      links: '[]'
+      uniqueKeys: '[["id"], ["name"]]'
+
